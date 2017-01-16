@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>table</title>
+</head>
+<body>
+  <!--td{title$*4}  -->
+  <!-- 표 -->
+  <!-- table>caption+(colgroup>col[width=""]*4)+(thead>tr>th{text}*4)+(tbody>tr*5>td{text}*4)  -->
+  <table  border="1"  width="100%" summary="3강의실 스마트반입니다" >
+    <!-- 표제목 -->
+    <caption>시간표</caption>
+    <!--  표셀크기조절-->
+    <colgroup>
+      <col width="100" />
+      <col width="200" />
+      <col />
+      <col />
+      <col />
+    </colgroup>
+    <!-- 합계가 있는경우 -->
+    <tfoot>
+    <tr>
+      <td>title1</td>
+      <td>title2</td>
+      <td>title3</td>
+      <td>title4</td>
+      <td>title4</td>
+    </tr>
+    </tfoot>
+    <!-- 테이블머릿말 -->
+    <thead>
+    <tr>
+      <th scope="col">월</th>
+      <th scope="col">화</th>
+      <th scope="col">수</th>
+      <th scope="col">목</th>
+      <th>금</th>
+    </tr>
+    </thead>
+    <!--테이블 info  -->
+    <tbody>
+    <tr>
+      <td colspan="5">title1</td>
+
+
+
+
+    </tr>
+    <tr>
+      <td rowspan="2">title1</td>
+      <td>title2</td>
+      <td>title3</td>
+      <td>title4</td>
+      <td>title4</td>
+    </tr>
+    <tr>
+      <td>title1</td>
+      <td>title2</td>
+      <td>title3</td>
+      <td>title4</td>
+
+    </tr>
+    </tbody>
+
+  </table>
+</body>
+</html>
