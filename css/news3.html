@@ -24,6 +24,7 @@
           margin: 0 30px 20px;
           outline: 1px #F00 solid;
       }
+      .wrap .contents .first-news .box1{width: 513px;height: 132px;margin-bottom: 10px;}
       .wrap .contents{
           height: 380px;
           margin: 0 30px;
@@ -37,19 +38,19 @@
       .contents .first-news strong{
           font-size: 24px;
           display: block;
-          margin-bottom: 10px;
+          margin-bottom: 6px;
           outline: 1px #F00 solid;
       }
       .contents .first-news span.thumb{
           width: 160px;height: 94px;outline: 1px #F00 solid;
-          float: left; margin-right: 10px; display: block;
+          float: left; margin-right: 10px; display: block;margin-bottom: 2px;
       }
       .contents .first-news span.thumb img{
           width: 100%;height: 100%;
       }
       .contents .first-news li{
         outline: 1px #F00 solid;
-        margin-left: 175px;
+        margin-left: 170px;
         font-size: 12px;
       }
       .contents .first-news li.first span.thumb + span{
@@ -58,14 +59,21 @@
       .contents .first-news li.first{
         margin: 0 0 10px 0;
       }
+      .contents .first-news .box1{width: 513px;height: 132px;outline: 1px solid #F00;}
 
-      .contents .second{width: 513px;height: 244px; outline: 1px blue solid;float: left;}
-      .contents .second span.img1{width: 126px;height: 78px;outline: 1px #F00 solid;display: block;float: left;margin: 0 auto;}
+      .contents .second{width: 513px;height: 238px; outline: 1px blue solid;float: left;}
+      .contents .second .box2{width: 162px;height: 217px;outline: 1px solid #F00;background-color: #ccc;float: left;
+                padding-top: 9px;padding-bottom: 10px;}
+      .contents .second span.img1{width: 124px;height: 76px;outline: 1px #F00 solid;display: block;margin: 0 auto;}
       .contents .second span.img1 img{width: 100%;height: 100%;}
-      .contents .second span.img2{width: 126px;height: 78px;outline: 1px #F00 solid;display: block;clear: both;margin: 0 auto;}
+      .contents .second span.img1 + span{display: block;font-size: 11px;outline: 1px solid blue;margin: 5px 17px;}
+      .contents .second span.img2{width: 124px;height: 76px;outline: 1px #F00 solid;display: block;margin: 0 auto;}
       .contents .second span.img2 img{width: 100%;height: 100%;}
-      .contents .first-news li.a span.text1 {display: block;font-size: 11px;}
+      .contents .second span.img2 + span{display: block;font-size: 11px;outline: 1px solid #F00;margin: 5px 17px;}
 
+      .contents .second li{outline: 1px solid #F00;font-size: 14px;}
+      .contents .second .list {width: 351px;height: 236px;float: left;}
+      .contents .second .list li{height: 26px;padding-left: 12px;}
 
    </style>
 
@@ -79,7 +87,9 @@
   <section class="contents">
 
     <div class="left-contents">
+
       <article class="first-news">
+        <div class="box1">
         <ul>
           <li class="first">
             <a href="#">
@@ -92,15 +102,18 @@
           <li><a href="#">[이슈분석] 삼성전자 "갤럭시S8 혁신으로 세계 스마트폰 1</a></li>
           <li><a href="#">[이슈분석] 삼성전자 "갤럭시S8 혁신으로 세계 스마트폰 1</a></li>
         </ul>
+        </div>
       </article>
 
       <article class="second">
           <div class="s-news">
             <ul>
+
+            <div class="box2">
              <li class="a">
                  <a href="#">
                   <span class="img1"><img src="http://static.naver.net/newsstand/2017/0124/etnews/145253/002.jpg" alt=""></span>
-                  <span class="text1">한국에서도 된다...포켓몬고 정식 출시</span>
+                  <span>한국에서도 된다...포켓몬고 정식 출시</span>
                  </a>
              </li>
              <li class="b">
@@ -109,15 +122,20 @@
                   <span>[단독] 스포티지·투싼, 최대 10만대 리콜 가능성</span>
                  </a>
              </li>
-             <li></li>
-             <li></li>
-             <li></li>
-             <li></li>
-             <li></li>
-             <li></li>
-             <li></li>
-             <li></li>
-             <li></li>
+             </div>
+
+             <div class="list">
+              <li><a href="#">a우체국 알뜰폰, 6월부터 스마트폰으로 가입한다</a></li>
+              <li><a href="#">'LG 부품의 힘' 디스플레이·이노텍 '깜짝 실적'</a></li>
+              <li><a href="#">KAIST, 특수 안경 없이 3D 홀로그래픽 본다</a></li>
+              <li><a href="#">삼성전자, 매출 230조·영업익 40조…최대 실적 도전</a></li>
+              <li><a href="#">네이버·카카오서 금융사까지 '동전없는사회로'</a></li>
+              <li><a href="#">한국에서도 된다...포켓몬고 정식 출시</a></li>
+              <li><a href="#">하이패스 차로, 30㎞ 안지켜도 됩니다</a></li>
+              <li><a href="#">10년뒤 무한에너지?···"2027년 융합로 상용화"</a></li>
+              <li><a href="#">"악기 배우면 뇌 퇴행 늦추는 것 입증"</a></li>
+             </div>
+
             </ul>
           </div>
       </article>
