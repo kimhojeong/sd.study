@@ -1,0 +1,131 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>h_news3</title>
+   <style>
+
+     *{margin: 0;padding: 0;}
+     ul,ol {list-style: none;}
+     a{text-decoration: none;color: #000;}
+     img{vertical-align: top;}
+
+     .wrap{
+           width: 900px;
+           height: 540px;
+           outline: 1px #F00 solid;
+           margin: 30px auto;
+         }
+      .wrap .top{
+          width: 840px;
+          height: 111px;
+          margin: 0 30px 20px;
+          outline: 1px #F00 solid;
+      }
+      .wrap .contents{
+          height: 380px;
+          margin: 0 30px;
+          outline: 1px #F00 solid;
+      }
+      .contents .left-contents{
+          width: 513px;
+          height: 100%;
+          outline: 1px #F00 solid;
+      }
+      .contents .first-news strong{
+          font-size: 24px;
+          display: block;
+          margin-bottom: 10px;
+          outline: 1px #F00 solid;
+      }
+      .contents .first-news span.thumb{
+          width: 160px;height: 94px;outline: 1px #F00 solid;
+          float: left; margin-right: 10px; display: block;
+      }
+      .contents .first-news span.thumb img{
+          width: 100%;height: 100%;
+      }
+      .contents .first-news li{
+        outline: 1px #F00 solid;
+        margin-left: 175px;
+        font-size: 12px;
+      }
+      .contents .first-news li.first span.thumb + span{
+        outline: 1px blue solid;
+      }
+      .contents .first-news li.first{
+        margin: 0 0 10px 0;
+      }
+
+      .contents .second{width: 513px;height: 244px; outline: 1px blue solid;float: left;}
+      .contents .second span.img1{width: 126px;height: 78px;outline: 1px #F00 solid;display: block;float: left;margin: 0 auto;}
+      .contents .second span.img1 img{width: 100%;height: 100%;}
+      .contents .second span.img2{width: 126px;height: 78px;outline: 1px #F00 solid;display: block;clear: both;margin: 0 auto;}
+      .contents .second span.img2 img{width: 100%;height: 100%;}
+      .contents .first-news li.a span.text1 {display: block;font-size: 11px;}
+
+
+   </style>
+
+</head>
+
+<body>
+
+<div class="wrap">
+
+  <header class="top"> </header>
+  <section class="contents">
+
+    <div class="left-contents">
+      <article class="first-news">
+        <ul>
+          <li class="first">
+            <a href="#">
+             <strong>삼성 “갤노트7 발화 원인은 배터리 결함 때문”</strong>
+             <span class="thumb"><img src="http://static.naver.net/newsstand/2017/0124/etnews/145253/001.jpg " alt=""></span>
+             <span>삼성전자는 23일 기자간담회를 갖고 갤럭시노트7 발화 원인이 배터리 자체 결함이라고 최종 발표했다. 차기작 `갤럭시S8`
+               등 스마트폰 안전성 강화를 위한 부품 전문팀 구...</span>
+            </a>
+          </li>
+          <li><a href="#">[이슈분석] 삼성전자 "갤럭시S8 혁신으로 세계 스마트폰 1</a></li>
+          <li><a href="#">[이슈분석] 삼성전자 "갤럭시S8 혁신으로 세계 스마트폰 1</a></li>
+        </ul>
+      </article>
+
+      <article class="second">
+          <div class="s-news">
+            <ul>
+             <li class="a">
+                 <a href="#">
+                  <span class="img1"><img src="http://static.naver.net/newsstand/2017/0124/etnews/145253/002.jpg" alt=""></span>
+                  <span class="text1">한국에서도 된다...포켓몬고 정식 출시</span>
+                 </a>
+             </li>
+             <li class="b">
+                 <a href="#">
+                  <span class="img2"><img src="http://static.naver.net/newsstand/2017/0124/etnews/145253/003.jpg" alt=""></span>
+                  <span>[단독] 스포티지·투싼, 최대 10만대 리콜 가능성</span>
+                 </a>
+             </li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+            </ul>
+          </div>
+      </article>
+
+    </div>
+
+    <div class="right-contents"></div>
+  </section>
+  </div>
+</body>
+</html>

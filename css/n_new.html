@@ -6,23 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <style>
+     body{background-image: url(http://static.naver.net/newsstand/img/20121231/bg_bd.png);}
     .wrap{
       width: 900px;
       height: 540px;
       outline: 1px #F00 solid;
       margin: 0 auto;
+      background-image:url(http://static.naver.net/newsstand/img/20121231/bg_panel.png);
+      padding: 0 25px;
     }
     img{vertical-align: top;}
-
     ul{margin: 0;padding: 0; list-style: none;}
     header{outline: 1px #F00 solid; height: 91px; margin: 0 30px 20px; padding-top: 20px;}
     header h1{outline: 1px #F00 solid; margin: 0;float: left;}
     header article{outline: 1px #F00 solid; float: right; margin-top: 10px;}
-    section{height: 360px;outline: 1px #F00 solid;margin: 0 30px;}
+    section{height: 380px;outline: 1px #F00 solid;margin: 0 30px;}
     header .top_btngroup{clear: left;font-size: 11px;}
+    .pink{color: red;}
 
     p{outline: 1px #F00 solid; margin: 10px 0;}
-
     .left-contents{outline:1px #F00 solid; width:513px; height:100%; float:left;}
     .left-contents .first-news{font-size:12px; outline:1px #F00 solid; height:130px; margin-bottom:10px;}
     .left-contents .first-news h2{margin:0; }
@@ -30,13 +32,22 @@
     .left-contents .first-news .thumb img{width:100%; height:100%;}
     .left-contents .first-news .list{margin-left:175px;}
     .left-contents .first-news .list ul a{text-decoration:none; color:#000;}
-    .left-contents .second .thumb_nail{height: 78px;outline: 1px #F00 solid; margin: 0 auto; }
-    .left-contents .second .thumb_nail li span{font-size: 11px;margin: 0 auto;outline: 1px #F00 solid;display: block;}
-    .left-contents .second .thumb_nail li div img{}
+    .left-contents .second .thumb_nail{outline: 1px #F00 solid;width: 162px;height: 238px; margin: 0 auto;float: left;background-color: #ccc;}
+    .left-contents .second .thumb_nail li div{width: 125px;height: 78px;outline: 1px #F00 solid;margin: 0 auto;}
+    .left-contents .second .thumb_nail li span{font-size: 11px;margin: 5px 15px;border: 1px #F00 solid;display: block;}
+    .left-contents .second .thumb_nail li div img{width: 100%;height: 100%;}
+    .left-contents .second .list{outline: 1px #F00 solid;margin-left: 162px;padding-left: 16px;font-size: 14px;}
+    .left-contents .second .list li{height: 26px;white-space:nowrap;overflow: hidden;text-overflow: ellipsis;}
 
-    .right-contents{outline: 1px #F00 solid;margin-left: 533px;height: 100%; background-color: #ccc;}
-
-
+    .right-contents{outline: 1px #F00 solid;margin-left: 533px;height: 100%;}
+    .right-contents .grid_list ul{outline: 1px #F00 solid;width: 110%;}
+    .right-contents .grid_list li{outline: 1px #F00 solid;float: left; width: 146px;height: 126px;font-size: 11px;margin-right: 10px;margin-bottom: 10px;}
+    .right-contents .grid_list img{width: 100%;}
+    .right-contents .issue h3{height: 30px;margin: 0;background-color: blue;}
+    .right-contents .issue li{font-size: 11px;height: 26px;}
+    .right-contents .issue li a{text-decoration: none;}
+    .right-contents .issue ul{list-style: disc;list-style-position: inside;margin-left: 10px;}
+    .right-contents .issue .box{height: 82px;padding-left:3px;background-color: #ccc;}
 
   </style>
 </head>
@@ -59,7 +70,7 @@
     <section>
       <div class="left-contents">
         <article class="first-news">
-          <h2>'갤노트7' 발화 사태 일단락…153일간의 기록</h2>
+          <h2 class="pink">'갤노트7' 발화 사태 일단락…153일간의 기록</h2>
            <div class="fc">
              <div class="thumb">
                <img src="http://static.naver.net/newsstand/2017/0123/etnews/141055/001.jpg" alt="">
@@ -87,10 +98,54 @@
               </li>
             </ul>
           </div>
+          <div class="list">
+            <ul>
+              <li class="pink">'일렉트로마트' SSG닷컴 상륙...신세계, 온라인 가전유통 참전</li>
+              <li>세계 TV 시장, 양보다 질…대형화, 고급화 뚜렷</li>
+              <li>(2보)삼성 “갤노트7 발화 원인은 배터리 자체 결함”</li>
+              <li>폭스콘 "미국에 70억달러 이상 투자 디스플레이 공장 설립"</li>
+              <li>SKT, 양자난수생성기 '소형 칩'화 성공</li>
+              <li class="pink">폴리실리콘값 16달러↑, OCI·한화케미칼 볕든다</li>
+              <li>KT, 세계 최초 100% SDN 구축</li>
+              <li>네패스, 사람 뇌 구조 'AI 구현 칩' 만든다</li>
+              <li>권혁빈회장 최근 관심사? “샌드박스 게임 개척이죠”</li>
+            </ul>
+          </div>
         </article>
 
       </div> <!--left-contents-->
       <div class="right-contents">
+         <div class="issue">
+               <h3>이슈분석</h3>
+               <div class="box">
+                <ul>
+                 <li><a href="#">18년만의 전산 분리, 농협 의왕IT통합센터 현장을</a href="#"></li>
+                 <li><a href="#">삼성전자, 노트7 사태 재발 막는다···품질강화 방</a href="#"></li>
+                 <li><a href="#">결국은 배터리 문제… 삼성, 왜 미리 잡지 못했나</a href="#"></li>
+                </ul>
+               </div>
+         </div>
+
+         <div class="grid_list">
+             <ul>
+               <li>
+                  <div><img src="http://static.naver.net/newsstand/2017/0124/etnews/091348/004.jpg " alt=""></div>
+                  <span>올해 말 하늘 나는 자동차 시제품 나온다</span>
+               </li>
+               <li>
+                  <div><img src="http://static.naver.net/newsstand/2017/0124/etnews/091348/004.jpg " alt=""></div>
+                  <span>올해 말 하늘 나는 자동차 시제품 나온다</span>
+               </li>
+               <li>
+                  <div><img src="http://static.naver.net/newsstand/2017/0124/etnews/091348/004.jpg " alt=""></div>
+                  <span>올해 말 하늘 나는 자동차 시제품 나온다</span>
+               </li>
+               <li>
+                  <div><img src="http://static.naver.net/newsstand/2017/0124/etnews/091348/004.jpg " alt=""></div>
+                  <span>올해 말 하늘 나는 자동차 시제품 나온다</span>
+               </li>
+             </ul>
+           </div>
       </div>
     </section>
   </div><!--wrap-->
