@@ -11,20 +11,24 @@
          ul,ol{list-style: none;}
          a{text-decoration: none;color: #000;}
          img{vertical-align: top;}
-         div{display: block;}
+         div,span{display: block;}
 
-         .wrap{width: 900px;height: 540px;outline: 1px solid #F00;margin: 30px auto;}
+         body{background-image: url(http://static.naver.net/newsstand/img/20121231/bg_bd.png);}
+
+         .wrap{width: 900px;height: 540px;outline: 1px solid #F00;margin: 30px auto;
+               background-image: url(http://static.naver.net/newsstand/img/20121231/bg_panel.png);
+               background-position: top;}
          .wrap .top{width: 840px;height: 111px;outline: 1px solid #F00;margin: 0 30px 20px;}
          .wrap .contents{height: 390px;margin: 0 30px;outline: 1px solid #F00;}
          .wrap .left-contents{width: 555px;height: 390px;outline: 1px solid #F00;float: left;}
          .wrap .right-contents{width: 280px;height: 389px;outline: 1px solid blue;float: right;}
 
-         .wrap .top h1{outline: 1px solid #F00; margin: 0;float: left;padding: 10px 0 20px;}
+         .wrap .top h1{outline: 1px solid #F00;float: left;padding: 10px 0 20px;}
          .wrap .top article{outline: 1px solid #F00;float: right;padding-top: 23px;}
          .wrap .top .top_btngroup{outline: 1px solid #F00; clear: left;}
 
          .left-contents .first-news h2{outline: 1px solid #F00;padding-left: 10px;margin-bottom: 5px;}
-         .left-contents .first-news{outline: 1px solid #000;height: 67px;width: 100%;}
+         .left-contents .first-news{outline: 1px solid #F00;height: 67px;width: 100%;}
          .left-contents .first-news li{display: inline;}
          .left-contents .first-news ul{padding-left: 10px;font-size: 15px;}
 
@@ -35,8 +39,7 @@
          .left-contents .second img{width: 100%;height: 100%;}
 
          .left-contents .third .box3{width: 555px;height: 154px;outline: 1px solid blue;}
-         .left-contents .third .box3 li span{display: block;font-size: 11px;}
-         .left-contents .third .box3 ul li{float: left;}
+         .left-contents .third .box3 ul li{float: left;font-size: 11px;}
          .left-contents .third .box3 span.p-1{width: 133px;height: 90px;outline: 1px solid #000;}
          .left-contents .third .box3 span.p-1 img{width: 100%;height: 100%;}
          .left-contents .third .box3 span.sp{outline: 1px solid #F00;padding:5px 10px;}
@@ -48,9 +51,19 @@
          .right-contents .news1 h5{outline: 1px solid #F00;padding:5px 0 5px 7px;}
          .right-contents .news1 ul li{outline: 1px solid #F00;font-size: 11px;height: 20px;padding-left: 7px;}
 
-         .right-contents .news2{outline: 1px solid #F00; height: 227px;}
+         .right-contents .news2{outline: 1px solid #F00; height: 227px;padding: 7px 12px 0 12px;}
+         .right-contents .news2 h5{outline: 1px solid #F00;}
+         .right-contents .news2 li{font-size: 11px;}
+         .right-contents .news2 ul{outline: 1px solid #F00;width: 255px;height: 208px;}
+         .right-contents .news2 .image{outline: 1px solid blue;width: 116px;height: 92px;margin-top: 9px;margin-right: 10px;float: left;}
+         .right-contents .news2 ul span.txt{width: 110px;height: 27px;outline: 1px solid #F00;padding:3px 3px;}
+         .right-contents .news2 ul span.pic{outline: 1px solid #000;width: 116px;height: 60px;}
+         .right-contents .news2 span.pic img{width: 100%;height: 100%;outline: 1px solid #000;float: left;}
 
-         .right-contents .news3{outline: 1px solid #F00;height: 90px;}
+        .right-contents .news3{outline: 1px solid #F00;height: 86px;padding: 0 7px;}
+        .right-contents .news3 h5{outline: 1px solid #F00;padding: 5px 0 5px 6px;}
+        .right-contents .news3 li{outline: 1px solid #F00;font-size: 11px;overflow: hidden;height: 19px;padding: 1px 0 0 6px;}
+
      </style>
 </head>
 <body>
@@ -59,7 +72,7 @@
         <header class="top">
             <h1><a href="#"><img src="http://static.naver.net/newsstand/up/2013/0813/nsd11467633.gif" alt="일간스포츠"></a></h1>
             <article>
-                <a href="#"><img src="http://adcreative.naver.com/ad3/1004/1004874/468_60_01484900114786.jpg" alt=""></a>
+                <a href="#"><img src="http://adcreative.naver.com/ad3/1004/1004874/468_60_01484900114786.jpg" alt="일간스포츠"></a>
             </article>
 
             <div class="top_btngroup">
@@ -147,9 +160,50 @@
                     </div>
                 </div>
 
-                <div class="news2"></div>
+                <div class="news2">
+                  <h5>HOT PHOTO</h5>
+                  <ul>
+                    <li>
+                      <div class="image">
+                        <span class="pic"><a href="#"><img src="http://static.naver.net/newsstand/2017/0126/isplus/221052/006.jpg" alt=""></a></span>
+                        <span class="txt"><a href="#">'운동 끝' 레이양, 탈의실 셀카</a></span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="image">
+                        <span class="pic"><a href="#"><img src="http://static.naver.net/newsstand/2017/0126/isplus/221052/007.jpg" alt=""></a></span>
+                        <span class="txt"><a href="#">달샤벳 수빈, 숨겨둔 볼륨몸매</a></span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="image">
+                        <span class="pic"><a href="#"><img src="http://static.naver.net/newsstand/2017/0126/isplus/221052/008.jpg" alt=""></a></span>
+                        <span class="txt"><a href="#">레이싱모델 김지희, 육감적인 몸매 눈길</a></span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="image">
+                        <span class="pic"><a href="#"><img src="http://static.naver.net/newsstand/2017/0126/isplus/221052/009.jpg" alt=""></a></span>
+                        <span class="txt"><a href="#">설현, 충격적인 과거 모습</a></span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
 
-                <div class="news3"></div>
+                <div class="news3">
+                  <h5>COLUMN</h5>
+                    <ul>
+                      <li>
+                        <span><a href="#">[리뷰is] 장영란, 콩나물국밥 한 뚝배기 하실래예?</a></span>
+                      </li>
+                      <li>
+                        <span><a href="#">FA 시장 폐장, 3년 연속 총액 700억원 돌파</a></span>
+                      </li>
+                      <li>
+                        <span><a href="#">아자르, 첼시의 '전설'로 달려가고 있다</a></span>
+                      </li>
+                    </ul>
+               </div>
             </div>
 
         </section>
