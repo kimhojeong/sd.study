@@ -12,20 +12,38 @@
         img{vertical-align: top;}
         div,span{display: block;}
 
-        .wrap{outline: 1px solid #F00;width: 990px;height: 2016px;margin: 0 auto;}
-        .wrap .top{outline: 1px solid #F00;width: 990px;height: 30px;margin: 0 auto;}
-        .wrap .fir{outline: 1px solid #F00;width: 272px;height: 30px;float: left;font-size: 12px;}
-        .wrap .global{outline: 1px solid #F00;width: 350px;height: 30px;float: right;}
-        .wrap .global ul{outline: 1px solid #F00;width: 500px;height: 30px;float: right;}
-        .wrap .global ul li{display: inline;float: right;font-size: 11px;padding: 5px 1px;}
-        .wrap .global img{margin: 3px 5px}
-        .wrap section{outline: 1px solid #F00;width: 990px;height: 1344px;margin: 0 auto;margin-top: 10px;}
-        .wrap footer{outline: 1px solid #F00;width: 990px;height: 452px;}
+        .wrap{outline: 1px solid #7D7D7D;width: 990px;height: 2016px;margin: 0 auto;}
+        .wrap .top{border: 1px solid #7D7D7D;height: 30px;background: #ECECEC;}
 
-        .wrap .top_header{outline: 1px solid #F00;width: 990px;height: 107px;margin: 0 auto;}
-        .wrap .top_header .logo_box img{outline: 1px solid #F00; margin:30px auto;float: left;}
+        .wrap .top .fir ul{width: 400px;height: 30px;float: left;}
+        .wrap .top .fir ul li{font-size: 11px;display: inline;margin-right: 5px;}
+        .wrap .top .fir ul img{margin:7px 2px;}
+        .wrap .top .fir li.m1 img{margin-top: 8px;}
+        .wrap .top .fir li.m3 img{margin-top: 10px;}
 
+        .wrap .global ul{width: 500px;height: 30px;float: right;}
+        .wrap .global ul li{display: inline;float: right;font-size: 11px;padding: 5px 3px 1px 2px;}
+        .wrap .global img{margin: 3px 5px;}
+        .wrap section{width: 990px;height: 1344px;margin: 0 auto;margin-top: 10px;}
+        .wrap footer{width: 990px;height: 452px;}
 
+        .wrap .top_header{outline: 1px solid #7D7D7D;width: 990px;height: 147px;margin: 0 auto;position: relative;}
+        .wrap .top_header span.logo img{margin:32px 0 15px;float: left;}
+
+        .wrap .top_header .box{width: 280px;height: 73px;margin: 0 auto;margin-bottom: 20px;
+                position: absolute;left: 355px;bottom: 33px;}
+        .wrap .top_header .box span{display: inline;}
+        .wrap .top_header span.musical{margin-left: 747px;padding-top: 13px;}
+        .wrap .top_header .box span.bar{float: right;position: absolute;right: 0;bottom: 2%;height: 25px;}
+        .wrap .top_header .box span.search{position: relative;border: 2px solid #004986;}
+        .wrap .top_header .m_group li{display: inline;font-size: 11px;font-weight: bold;}
+        .wrap .top_header .m_group{width: 336px;position: absolute;left: 0;top:50%;}
+
+        .wrap .top_header .menu{width: 990px;height: 39px;margin-bottom: 0;position: absolute;left: 0;bottom: 0;
+                background: #004986;}
+        .wrap .top_header .menu ul{margin-top: 7px;margin-left: 6px;}
+        .wrap .top_header .menu li{font-size: 15px;font-weight: bold;color: #FFF;display: inline;}
+        .wrap .top_header .menu li.icon img{margin: 10px 6px;}
 
     </style>
 </head>
@@ -35,32 +53,61 @@
             <div class="top">
                 <div class="fir">
                     <ul>
-                        <li><a href="#"><img src="../images/icon_star.png" alt="">즐겨찾기</a></li>
-                        <li><a href=""><img src="../images/icon_10.png" alt="">기아 하이브리드K5(12년식)</a></li>
-                        <li><a href=""><img src="../images/icon_up.png" alt="">41</a></li>
+                        <li class="m1"><a href="#"><img src="../images/icon_star.png" alt="">즐겨찾기</a></li>
+                        <li><a href="#"><img src="../images/icon_10.png" alt="">기아 하이브리드K5(12년식)</a></li>
+                        <li class="m3"><a href="#"><img src="../images/icon_up.png" alt="">41</a></li>
                     </ul>
                 </div>
                 <div class="global">
                     <ul>
-                        <li><a href="#"><a href=""><img src="../images/icon_mobile.png" alt="">모바일</a></li>
-                        <li><a href="#"><img src="../images/icon_mypage.png" alt="">전체메뉴 |</a></li>
-                        <li><a href="#">고객센터 |</a></li>
-                        <li><a href="#">찜한차량2 |</a></li>
-                        <li><a href="#">쪽지1 |</a></li>
-                        <li><a href="#"><img src="../images/icon_mypage.png" alt="">마이페이지 |</a></li>
-                        <li><a href="#">회원가입 |</a></li>
-                        <li><a href="#">로그인 |</a></li>
+                        <li><a href="#"><a href="">&#124;<img src="../images/icon_mobile.png" alt="">모바일</a></li>
+                        <li><a href="#">&#124;&nbsp;전체메뉴<img src="../images/icon_mypage.png" alt=""></a></li>
+                        <li><a href="#">&#124;&nbsp;고객센터</a></li>
+                        <li><a href="#">&#124;&nbsp;찜한차량2</a></li>
+                        <li><a href="#">&#124;&nbsp;쪽지1</a></li>
+                        <li><a href="#">&#124;&nbsp;마이페이지<img src="../images/icon_mypage.png" alt=""></a></li>
+                        <li><a href="#">&#124;&nbsp;회원가입</a></li>
+                        <li><a href="#">로그인</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="top_header">
-                <div class="logo_box">
-                    <a href="#"><img src="../images/banner_top.png" alt=""></a>
 
-                </div>
-            </div>
+                    <span class="logo"><a href="#"><img src="../images/banner_top.png" alt=""></a></span>
+                    <span class="musical"><a href="#"><img src="../images/banner_musical.png" alt=""></a></span>
+                    <div class="box">
+                      <span><a href="#"><img src="../images/banner_tv.png" alt=""></a></span>
+                      <span class="search"><input type="text" size="35"></span>
+                      <span class="bar"><img src="../images/search_bar.png" alt=""></span>
+                    </div>
 
+                    <div class="m_group">
+                      <ul>
+                        <li><a href="#">인기중고차 &#124;</a></li>
+                        <li><a href="#">오토바이 &#124;</a></li>
+                        <li><a href="#">용품장터 &#124;</a></li>
+                        <li><a href="#">협력업체 &#124;</a></li>
+                        <li><a href="#">이벤트</a></li>
+                      </ul>
+                    </div>
+                    <div class="menu">
+                      <ul>
+                        <li><a href="#">사이버매장 &#124;</a></li>
+                        <li><a href="#">국산중고차 &#124;</a></li>
+                        <li><a href="#">수입중고차 &#124;</a></li>
+                        <li><a href="#">내차팔기 &#124;</a></li>
+                        <li><a href="#">커뮤니티 &#124;</a></li>
+                        <li class="icon"><a href="#">더보기<img src="../images/icon_down.png" alt=""></a></li>
+                      </ul>
+                    </div>
+                    <div class="menu2">
+                      <ul>
+                        <li><a href="#">공지<img src="../images/icon_arrow.png" alt=""></a></li>
+                        <li><a href=""3>보배드림 어플 업데이트 안내</a></li>
+                      </ul>
+                    </div>
+              </div>
         </header>
         <section>
 
