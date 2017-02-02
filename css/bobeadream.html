@@ -11,7 +11,16 @@
         a{text-decoration: none;color: #000;}
         img{vertical-align: top;}
         div,span{display: block;}
+        body{font-size: 12px;}
+        fieldset{border: 0;}
 
+        .ir{
+            text-indent: -9999px;
+            font-size: 0;
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+        }
         .wrap{outline: 1px solid #7D7D7D;width: 990px;height: 2016px;margin: 0 auto;}
         .wrap .top{border: 1px solid #7D7D7D;height: 30px;background: #ECECEC;}
 
@@ -26,7 +35,7 @@
         .wrap .global img{margin: 3px 5px;}
         .wrap section{outline: 1px solid #F00;width: 990px;height: 1344px;margin: 0 auto;margin-top: 10px;}
         .wrap section .first-news{outline: 1px solid #F00;width: 750px;height: 100%;float: left;}
-        .wrap section .aside{outline: 1px soldi #F00;margin-left: 760px;height: 100%;background: #CCC;}
+        .wrap section .aside{outline: 1px soldi #F00;margin-left: 760px;height: 100%;}
         .wrap footer{outline: 1px solid #F00;width: 990px;height: 440px;margin-bottom: 10px;}
 
         .wrap .top_header{outline: 1px solid #7D7D7D;width: 990px;height: 147px;margin: 0 auto;position: relative;}
@@ -102,7 +111,19 @@
         section .first-news .box7 .car-box{width: 139px;height: 147px;float: left;margin: 0 10px 8px 0;}
         section .first-news .box7 .car-box span.cupe{text-align: center;font-size: 13px;padding-top: 4px;}
 
+        section .aside .box_login .login{outline: 1px solid #959595;width: 202px;height: 102px;background-color: #f6f6f6;padding: 14px;position: relative;}
 
+        .box_login .login input[type="text"], input[type="password"]{width: 125px;height: 28px;border: 2px solid #f6f6f6;
+            border: 1px solid #959595;padding-left: 7px;}
+        .box_login .login p{width: 212px;}
+        .box_login .login span{float: left;margin-top: 13px;}
+        .box_login .login span.member{padding-left: 31px;}
+        .box_login .login .log_button{width: 56px;height: 56px;border: 1px solid #adb1bd;background-color: #FFF;position: absolute;right: 20px;top:15px;
+            text-align: center;}
+        .second_box{outline: 1px solid #adb1bd;height: 256px;}
+        .third_box{outline: 1px solid #adb1bd;height: 199px;}
+        .fourth_box{outline: 1px solid #adb1bd;height: 194px;}
+        .fifth_box{outline: 1px solid #adb1bd;}
 
     </style>
 </head>
@@ -375,7 +396,32 @@
 
 
             </div>
-            <div class="aside"></div>
+            <div class="aside">
+
+                <div class="box_login">
+                    <div class="login">
+                        <fieldset>
+                            <legend class="ir">로그인</legend>
+                                <input type="text" value="아이디" /></br>
+                                <input type="password" name="" value="비밀번호" /></br>
+                                <p>
+                                    <span><input type="checkbox" id="id"><label for="id">ID 저장</label></span>
+                                    <span class="member"><a href="#">회원가입 </a></span>
+                                    <span><a href="#">ID/회원가입</a></span>
+                                </p>
+                                <div class="log_button">로그인</div>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="second_box">
+
+                </div>
+                <div class="third_box"></div>
+                <div class="fourth_box"></div>
+                <div class="fifth_box"></div>
+
+            </div>
 
         </section>
         <footer></footer>
