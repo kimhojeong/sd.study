@@ -1,0 +1,27 @@
+body{margin:0; padding:0}
+
+@wrap_w:990px;
+
+.border(@color:red){
+    border:1px @color solid;
+}
+
+.wrap{
+    width:@wrap_w;
+}
+
+.nav{
+    width: @wrap_w+100;
+    height: 100px;
+    .border(red);
+    ul{
+        background: #000;
+        .border(blue);
+        li{
+            .border(green);
+            &:hover{
+                color:blue;
+            }
+        }
+    }
+}
