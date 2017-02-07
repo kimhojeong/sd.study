@@ -13,6 +13,7 @@
         div,span{display: block;}
         body{font-size: 12px;}
         fieldset{border: 0;}
+        input,button{vertical-align: middle;}
 
         .ir{
             text-indent: -9999px;
@@ -178,6 +179,7 @@
         .bn .sns{outline: 1px solid #F00;width: 207px;height: 43px;}
         .bn .sns>span img{float: left;margin-bottom: 2px;margin-right: 4px;}
 
+
         footer .m_n{width: 991px;height: 247px;}
         .m_n .gongi{border: 1px solid #959595;height: 30px;}
         .m_n .ls_m{border: 1px solid #959595;height: 216px;background-color: #f9f9f9;float: left;}
@@ -189,16 +191,34 @@
         .list_i{width: 124px;height: 100%;}
         .list_i li>a.tit{font-weight: bold;margin:15px 0 16px 10px;display: inline-block;}
         .list_i>li a{display: inline-block;line-height: 19px;margin-left: 10px;font-size: 11px;}
-        .m_n .ls_m:nth-of-type(7){ width: 234px;}
+        .ls_m:last-child{width:234px; }
+
 
         .na_m{outline: 1px solid #959595;height: 30px;}
-        .na_m ul>li{float: left;line-height: 25px;margin-left:15px;margin-right: 3px;}
-        .mon{outline: 1px solid #F00;width: 120px;height: 32px;}
+        .na_m ul>li{float: left;line-height: 23px;margin-left:15px;margin-right: 3px;}
+        .mon{outline: 1px solid #F00;width: 120px;height: 30px;}
         .na_m .mon>span{font-size: 11px;display: inline-block;}
         .mon span.st{font-weight: bold;float: left;}
         .mon span.t_num{float: right;}
-        .info{outline: 1px solid #F00;width: 644px;height: 30px;font-size: 11px;margin: 0 auto;}
+        .info{outline: 1px solid #F00;width: 600px;height: 30px;font-size: 11px;font-weight: bold;margin: 10px auto;padding: 10px;}
         .info ul>li{float: left;}
+        .tt .info li:before{
+            content: "";
+            border-left: 1px solid #464646;
+            height: 11px;
+            display: inline-block;
+            margin: 0 10px 0 10px;
+            vertical-align: middle;
+        }
+        .tt .info li:first-child::before{
+            content: "";
+            border: 0;
+            margin: 0;
+        }
+        .tt .info li{margin: 0 auto;}
+        .add{outline: 1px solid #F00;width: 718px;height: 85px;font-size: 11px;margin: 0 auto;}
+
+
 
     </style>
 </head>
@@ -625,7 +645,7 @@
                   <div class="ub">
                     <div class="t_n">
                       <span class="name">이벤트 소식</span>
-                      <span class="arr">더보기<i class="na"><img src="../images/ch_arrow.png" alt=""></i></span>
+                      <span class="arr">더보기<i class="na"><img src="../images/box2_ar.png" alt=""></i></span>
                     </div>
                   </div>
 
@@ -810,15 +830,23 @@
 
             <div class="info">
               <ul>
-                <li>회사소개</li>
-                <li>제휴광고</li>
-                <li>협력업체선정</li>
-                <li>인재채용</li>
-                <li>이용약관</li>
-                <li>개인정보취급방침</li>
-                <li>고객센터</li>
-                <li>사이트맵</li>
+                <li><a href="">회사소개</a></li>
+                <li><a href="">제휴광고</a></li>
+                <li><a href="">협력업체선정</a></li>
+                <li><a href="">인재채용</a></li>
+                <li><a href="">이용약관</a></li>
+                <li><a href="">개인정보취급방침</a></li>
+                <li><a href="">고객센터</a></li>
+                <li><a href="">사이트맵</a></li>
               </ul>
+            </div>
+
+            <div class="add">
+                <span>
+                    대표이사 : 김보배| 서울 양천구 목동동로 233-1 드림타워 11,12층| 고객센터 02-784-2329| 팩스 : 02-6499-2329| 이메일 : bobaedream@bobaedream.co.kr<br/>
+                    개인정보관리책임자 : 이은호| Copyright©(주)보배네트워크| 사업자등록번호 : 117-81-64543| 통신판매업신고번호 : 제 2013-서울양천-0465호 사업자정보확인<br/>
+                    보배드림은 통신판매중개자이며 차량판매의 당사자가 아닙니다. 따라서 보배드림은 차량 거래검토 및 거래에 대하여 어떤 책임을 지지 않습니다.
+                </span>
             </div>
 
           </div>
