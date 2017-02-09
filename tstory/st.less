@@ -1,5 +1,6 @@
 // out: style.css, sourcemap: false, compress: true
 @import url('https://fonts.googleapis.com/css?family=Kanit');
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 @color-white:#FFF;
 @color-black:#000;
@@ -10,7 +11,7 @@
 @color-line:@color-sub;
 
 //reset
-body{font-family: 'Kanit', sans-serif;}
+body{font-family: 'Kanit','Noto Sans KR',sans-serif;}
 body,html,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,p{margin:0; padding:0;}
 ul,ol,li{list-style:none;}
 img{border:0; vertical-align: top;}
@@ -25,14 +26,14 @@ a{
     padding:20px 50px;
   outline:1px #F00 solid;
   text-align: center;
-  background-color:@color-master;
-  h1{ 
+  background-color: #6E4F95;
+  h1{
     font-size:30px;
     font-weight: 300;
     border-bottom:2px @color-white solid;
     padding-bottom:5px;
     display:inline-block;
-    text-transfrom: capitalize;
+    text-transform:uppercase;
     a{
       color:@color-white;
       span{
@@ -53,4 +54,120 @@ a{
           }
       }
   }
+
 }
+#container{
+  width: 990px;
+  margin:20px auto 0;
+  border:1px #F00 solid;
+  .entry{
+    .titleWrap{
+      margin-bottom:30px;
+      h2 a{
+        font-weight: 300;
+        border-bottom:2px @color-main solid;
+      }
+    }
+    .tagTrail{
+      border:1px @color-sub solid;
+      border-radius:3px;
+      margin:35px 0 0;
+      padding:10px 20px;
+      position:relative;
+      .tagText{
+        border-radius:3px 3px 0 0 ;
+        margin-left:20px;
+        position:absolute;
+        left:0;
+        top:-30px;
+        height:30px;
+        padding:0 15px;
+        background-color: #A07DCC;
+        color:@color-white;
+      }
+      a{
+       font-size:12px;
+       color:@color-white;
+       background-color: #A07DCC;
+       padding:0 10px;
+       border-radius:3px;
+      }
+    }
+    .comment{
+      margin-top:30px;
+      .commentList{
+        border:1px #6E4F95 solid;
+        >ol>li{
+          margin:20px 0;
+          overflow: hidden;
+
+        }
+        p{
+            margin-left: 150px;
+        }
+        .image{
+          display:block;
+          width:50px;
+          height:50px;
+          border-radius:3px;
+          border:2px #6E4F95 solid;
+          overflow:hidden;
+          float:left;
+          margin-right:10px;
+          img{
+            width:100%;
+
+          }
+        }
+        .control{
+            float:right;
+            margin-right: 10px;
+            .address,
+            .modify{
+                border: 1px solid #6E4F95;
+                height:25px;
+                background-color: #6E4F95;
+                color:@color-white;
+                font-size: 12px;
+                border-radius: 3px;
+                padding: 1px;
+            }
+            .write{
+                border: 1px solid #A07DCC;
+                height:25px;
+                background-color: #A07DCC;
+                color:@color-white;
+                font-size: 12px;
+                border-radius: 3px;
+                padding: 1px;
+            }
+
+          }
+         }
+      .commentWrite{
+            overflow: hidden;
+          textarea {
+              margin: 5px auto;
+              border: 1px solid #A07DCC ;
+          }
+          input[type="submit"]{
+              float: right;
+              border: 1px solid #A07DCC;
+              height: 25px;
+              background-color: #A07DCC;
+              color: @color-white;
+              font-size: 12px;
+              border-radius: 3px;
+              padding: 1px;
+              margin-right: 10px;
+          }
+      }
+    }
+  }
+}
+
+
+
+
+
+//
