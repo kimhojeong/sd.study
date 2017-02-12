@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>hj_bobea</title>
+  <style>
+
+  *{margin: 0;padding: 0;}
+  body{font-size: 12px;}
+  ul,ol,dl,li{list-style: none;}
+  img{vertical-align: top;}
+  fieldset{border: 0;}
+  input,button{vertical-align: middle;}
+  a{text-decoration: none; color: #373737;}
+  i,em,cite{font-style: normal;}
+
+  .fl{float: left;}
+  .fr{float: right;}
+
+  .ir{
+    text-indent: -9999px;
+    font-size: 0;
+    left: -9999px;
+    top: -9999px;
+  }
+
+  .header{border-bottom: 1px solid #d5d0cc;background-color: #f8f8f8; height: 30px;}
+  .gnb{outline: 1px solid #d5d0cc;width: 990px;height: 30px;margin: 0 auto;line-height: 30px;}
+  .gnb .site_option div{float: left;}
+
+  .site_option div:first-child{margin-right: 13px;}
+  .icon_bookmark{padding-left: 13px;background-image: url(../images/icon_star.png);
+    background-repeat: no-repeat;background-position: 0 4px;}
+  .site_option .rank li{padding-left: 18px;background-image: url(../images/icon_10.png);
+    background-repeat: no-repeat;background-position: 0 9px;}
+  .icon_uparrow{padding-left: 10px;background-image: url(../images/icon_up.png);
+    background-repeat: no-repeat;background-position: 0 7px;}
+  .rank i{margin-left: 8px;}
+
+  .global_menu li{display: inline-block;}
+  .global_menu li::before{
+    content: "";
+    border-left: 1px solid #d1d1d1;
+    margin: 0 7px 0 8px;
+    height: 11px;
+    vertical-align: middle;
+  }
+  .global_menu li:first-child::before{
+    content: "";
+    border: 0;
+    margin: 0;
+  }
+
+  .lnb{border: 1px solid #F00;width: 990px;height: 107px;margin: 0 auto;}
+  .lnb .logo {position: relative;top:34px;}
+  .lnb .banner{position: relative;top: 13px;}
+  .lnb .search{outline: 1px solid #F00;width: 280px;height: 73px;margin: 0 auto;
+    position: relative;top: 19px;}
+  .lnb .search input[type="text"]{border: 2px solid #3b5999;width: 237px;height: 23px;
+    }
+  .lnb .search input[type="submit"]{width: 39px;height: 27px;background-color: #3b5999;
+    border: 0;font-size: 0;background-image: url(../images/search_bar.png);background-repeat: no-repeat;}
+  .top_submenu ul{font-size: 0;}
+  .lnb .top_submenu li{display: inline-block;font-size: 14px;}
+  .top_submenu li::before{
+    content: "";
+    border-left: 1px solid #d1d1d1;
+    margin: 0 5px;
+  }
+  .top_submenu li:first-child::before{border: 0;margin: 0;}
+
+  .main_menu{outline: 1px solid #F00;width: 990px;height: 76px;margin: 0 auto;position: relative;}
+  .main_menu>ul{height: 39px;background-color: #3b5999;}
+  .main_menu>ul>li{float: left;line-height: 39px;}
+  .main_menu>ul>li>a{color: #FFF;display: inline-block;
+    font-size: 15px;}
+  .main_menu>ul>li::before{content: "";border-left: 1px solid  #d1d1d1;margin: 0 5px;}
+  .main_menu>ul>li:first-child::before{border: 0;}
+  .main_menu>ul>li>a:hover{background-color: #5785f2;}
+  .main_menu>ul>li ul{position: absolute;left: 0;}
+  .main_menu>ul>li li{float: left;margin: 0 6px;}
+
+  .information{border: 1px solid #F00;position: absolute;right: 0;top: 0;min-width: 200px;}
+  .information .notice{line-height: 37px;}
+  .notice h2{font-size: 11px;float: left;color: #FFF;padding-right: 9px;}
+  .notice span{color: #FFF;}
+  .intoday div{float: left;line-height: 37px;}
+  .intoday span{margin: 0 3px;}
+  .intoday div span:first-child+span{color: #005dde;font-weight: bold;margin-left: 10px;}
+
+  .container{outline: 1px solid #F00;width: 990px;height: 1350px;margin: 0 auto;margin-top: 10px;}
+  .container .section{outline: 1px solid #F00;width: 748px;height: 100%;float: left;}
+  .container .section .sec_line{border-bottom: 11px;height: 102px;}
+  .container .section .sec_line div{border: 1px solid #c7cbce;}
+  .sec_hotlist{outline: 1px solid #F00;height: 232px;margin-top: 11px;}
+  .main_banner{outline: 1px solid #F00;width: 400px;height: 230px;float: left;
+  border: 1px solid #c7cbce;position: relative;}
+
+  .descrip{position: absolute;left: 0;right: 0;bottom: 0;height: 44px;background-color: rgba(0,0,0,.8);
+    color: #FFF;}
+  .descrip div{margin: 3px;}
+  .descrip strong{font-size: 14px;display: block;}
+  .descrip cite{font-size: 12px;font-style: normal;}
+  .btngroup {position: absolute;right: 0;bottom: 0;text-align: center;font-size: 0;}
+  .btngroup span{font-size: 12px;}
+  .btngroup .number::after{content: "/";margin: 0 5px;}
+
+  .aside{outline: 1px solid blue;float: right;width: 233px;height: 100%;}
+
+  .footer{outline: 1px solid #F00;width: 990px;height: 450px;margin: 0 auto;margin-bottom: 20px;}
+  </style>
+
+</head>
+
+<body>
+  <div class="header">
+
+    <div class="gnb">
+
+      <div class="site_option fl">
+        <div><a href="" class="icon_bookmark">즐겨찾기</a></div>
+        <div class="rank">
+          <ol>
+            <li><a href="">기아k5 하이브리드 신차출시</a><i class="icon_uparrow">41</i></li>
+          </ol>
+        </div>
+      </div><!-- div.site_option -->
+
+      <div class="global_menu fr">
+        <ul>
+          <li><a href="">로그인</a></li>
+          <li><a href="">회원가입</a></li>
+          <li><a href="">마이페이지</a></li>
+          <li><a href="">쪽지</a></li>
+          <li><a href="">찜한차량</a></li>
+          <li><a href="">고객센터</a></li>
+          <li><a href="">전체매뉴</a></li>
+          <li><a href="">모바일</a></li>
+        </ul>
+      </div>
+    </div><!-- div.gnb -->
+  </div><!-- div.header -->
+
+
+  <div class="lnb">
+
+    <div class="logo fl">
+      <h1><a href=""><img src="../images/banner_top.png" alt="보배드림"></a></h1>
+    </div>
+
+    <div class="banner fr">
+      <a href=""><img src="../images/banner_musical.png" alt=""></a>
+    </div>
+
+    <div class="search">
+      <a href=""><img src="../images/banner_tv.png" alt=""></a>
+      <fieldset class="ir">
+        <legend>검색</legend>
+        <input type="text" /><input type="submit" value="검색" />
+      </fieldset>
+    </div>
+
+    <div class="top_submenu">
+      <ul>
+        <li><a href="">인기중고차</a></li>
+        <li><a href="">오토바이</a></li>
+        <li><a href="">용품장터</a></li>
+        <li><a href="">협력업체</a></li>
+        <li><a href="">이벤트</a></li>
+      </ul>
+    </div>
+
+  </div><!-- div.lnb -->
+
+  <div class="main_menu">
+    <ul>
+      <li><a href="">사이버매장</a>
+        <div>
+          <ul>
+            <li><a href="">국산차매장</a></li>
+            <li><a href="">수입차매장</a></li>
+            <li><a href="">스포츠카매장</a></li>
+            <li><a href="">4륜/RV매장</a></li>
+            <li><a href="">밴/승합차매장</a></li>
+            <li><a href="">튜닝카매장</a></li>
+            <li><a href="">올드카매장</a></li>
+            <li><a href="">오토갤러리매장</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="">국산차매장</a></li>
+      <li><a href="">수입차매장</a></li>
+      <li><a href="">내차팔기</a></li>
+      <li><a href="">커뮤니티</a></li>
+      <li><a href="">더보기</a></li>
+    </ul>
+
+    <div class="information">
+        <div class="notice">
+          <h2>공지</h2>
+          <span>보배드림 어플리케이션 안내</span>
+        </div>
+        <div class="intoday">
+          <div class="today">
+            <span>오늘방문</span><span>5,542</span>
+          </div>
+          <div class="yesterday">
+            <span>어제방문</span><span>54,153</span>
+          </div>
+        </div>
+    </div>
+
+  </div><!-- div.main_menu -->
+
+  <div class="container">
+    <div class="section">
+
+      <div class="sec_line">
+        <div class="fl"><img src="../images/car1.png" alt=""></div>
+        <div class="fr"><img src="../images/box1_2.png" alt=""></div>
+      </div><!-- div.sec_line -->
+
+      <div class="sec_hotlist">
+        <ul>
+          <li class="main_banner">
+            <span><img src="../images/box2_1.png" alt=""></span>
+            <div class="descrip">
+              <div>
+                <strong>사이버매장특종매물</strong>
+                <cite>2013 아우디 R8 5.2 V10 스파이더</cite>
+              </div>
+              <div class="btngroup">
+                <div class="count">
+                  <span class="number">1</span><span>3</span>
+                </div>
+                <input type="button" value="이전">
+                <input type="button" value="다음">
+              </div><!-- div.btngroup -->
+            </div><!-- div.descrip -->
+
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div><!-- div.sec_hotlist -->
+
+      <div class="grid-lists"></div>
+    </div><!-- div.section -->
+    <div class="aside"></div>
+
+  </div><!-- div.container -->
+
+  <div class="footer"></div>
+</body>
+</html>
