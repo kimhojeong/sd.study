@@ -6,10 +6,10 @@
 @color-black:#000;
 @color-font:#666;
 @color-sub:#360F32;
-@color-main:#360F32;
+@color-main:#403e41;
 @color-master:#360F32;
 @color-line:@color-sub;
-@layoutwith:700px;
+@layoutwith: 700px;
 
 //reset
 body{font-family: 'Kanit','Noto Sans KR',sans-serif;}
@@ -27,7 +27,7 @@ a{
     padding:20px 50px;
   outline:1px #F00 solid;
   text-align: center;
-  background-color: #6E4F95;
+  background-color: #403e41;
   h1{
     font-size:30px;
     font-weight: 300;
@@ -58,22 +58,28 @@ a{
 
 }
 #container{
-
+    margin:30px auto 0;
+    border:1px #F00 solid;
+    overflow: hidden;
+    width: 990px;
     #content{
-    width: 700px;
+    width: @layoutwith;
     float:left;
      }
-      width: 990px;
-      margin:20px auto 0;
-      border:1px #F00 solid;
+
   .entry{
     .titleWrap{
       margin-bottom:30px;
       h2 a{
+        color:@color-main;
+        font-size: 25px;
         font-weight: 300;
-        border-bottom:2px @color-main solid;
+      }// h2 a
+      .admin{
+          font-size: 9px;
       }
-    }
+    }// .titleWrap
+
     .tagTrail{
       border:1px @color-sub solid;
       border-radius:3px;
@@ -90,7 +96,8 @@ a{
         padding:0 15px;
         background-color: #A07DCC;
         color:@color-white;
-      }
+      }//   .tagText
+
       a{
        font-size:12px;
        color:@color-white;
@@ -98,7 +105,8 @@ a{
        padding:0 10px;
        border-radius:3px;
       }
-    }
+    } // .tagTrail
+
     .comment{
       margin-top:30px;
       .commentList{
@@ -109,7 +117,7 @@ a{
           li{
               margin: 30px 0 30px 68px;
              }
-          }
+          }// >ol>li
 
         .image{
           display:block;
@@ -123,15 +131,16 @@ a{
           img{
             width:100%;
 
-          }
-        }
+          }// img
+        }// .image
+
         .control{
             float:right;
             margin-right: 10px;
             +p{
                 border: 1px solid #F00;
                 overflow: hidden;
-            }
+            }// +p
 
             .address,
             .modify{
@@ -142,7 +151,8 @@ a{
                 font-size: 12px;
                 border-radius: 3px;
                 padding: 1px;
-            }
+            }// .address,.modify
+
             .write{
                 border: 1px solid #A07DCC;
                 height:25px;
@@ -151,10 +161,11 @@ a{
                 font-size: 12px;
                 border-radius: 3px;
                 padding: 1px;
-            }
+            }// .write
 
-          }
-         }
+          } // .control
+         } //  .commentList
+
       .commentWrite{
             overflow: hidden;
           .textwrap{
@@ -168,8 +179,8 @@ a{
               width: 98%;
               resize: none;
               vertical-align: top;
-           }
-          }
+           } // textarea
+          } // .textwrap
           input[type="submit"]{
               float: right;
               border: 1px solid #A07DCC;
@@ -181,8 +192,9 @@ a{
               padding: 1px;
               margin: 10px;
           }
-      }
-    }
+      } // .commentWrite
+    } // .comment
+
     .paging{
      text-align:center;
      padding:20px 0;
@@ -191,26 +203,46 @@ a{
        padding:0 5px;
        border-radius: 3px;
        font-size:12px;
-     }
+     }// a
 
-     }
-    }
+     } // .paging
+    } // .entry
+
    #sidebar{
-       margin-left: @layoutwith;
+       margin-left:700px;
        padding: 0 10px;
        border: 1px solid #F00;
+       font-size: 12px;
+       .blogImage{
+            background-color: #f5f5f5;
+            font-size: 0;
+            text-align: center;
+            height: 339px;
+            span.name{
+                font-size: 15px;
+                text-align: center;
+                display: inline-block;
+            }// span.name
+       } //.blogImage
+       .search fieldset{
+           border: 0;
+           text-indent: -9999px;
+           font-size: 0;
+           margin: 30px 0;
+           input{
+               width: 263px;
+               height: 36px;
+               border: 1px solid #ddd;
+               padding: 6px;
+           }
+       }// .search fieldset
 
        .blogImage img{
-           width: 260px;
-           height: 260px;
-           margin: 0 auto;
-
-       }
-   }
-}
+           width:162px;
+           height: 160px;
+           margin: 32px 44px 10px 44px;
 
 
-
-
-
-//
+       }// .blogImage img
+   } // #sidebar
+} // #container
