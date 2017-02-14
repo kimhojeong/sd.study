@@ -12,7 +12,7 @@
   <s_t3>
     <div id="header">
       <!-- 01. 블로그 제목 -->
-      <h1><a href="[##_blog_link_##]">[##_title_##]<span>코딩</span></a></h1>
+      <h1><a href="[##_blog_link_##]">[##_title_##]<span></span></a></h1>
       <!-- 02. 블로그 메뉴 -->
       <div class="blogMenu">
         [##_blog_menu_##]
@@ -275,6 +275,14 @@
                         <span class="name">Hojeong</span>
                     </div>
                     <div class="blogDesc">[##_desc_##] <span class="userID">[##_blogger_##]</span></div>
+                    <div class="social">
+                        <ul>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>
                 </div>
             </s_sidebar_element>
 
@@ -288,7 +296,7 @@
              </div>
 
             <div class="category">
-               <h3>카테고리</h3>
+               <h3>Category</h3>
                    [##_category_list_##]
              </div>
          </s_sidebar_element>
@@ -296,7 +304,7 @@
          <s_sidebar_element>
             <!-- 최근에 올라온 글 -->
             <div class="recentPost">
-                <h3>최근에 올라온 글 </h3>
+                <h3>Recent Posts</h3>
                     <ul>
                         <s_rctps_rep>
                             <li>
@@ -311,7 +319,7 @@
         <s_sidebar_element>
          <!-- 최근에 달린 댓글 -->
           <div class="recentComment">
-              <h3>최근에 달린 댓글</h3>
+              <h3>Recent Comments</h3>
                   <ul id="recentComments">
                       <s_rctrp_rep>
                           <li>
@@ -330,9 +338,10 @@
     </div> <!-- sidebar close -->
 
 
-    <div id="footer">
-    </div> <!-- footer close -->
+
   </div> <!-- container close -->
   </s_t3>
+  <div id="footer">
+  </div> <!-- footer close -->
 </body>
 </html>

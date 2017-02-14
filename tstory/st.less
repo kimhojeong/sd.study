@@ -5,10 +5,10 @@
 @color-white:#FFF;
 @color-black:#000;
 @color-font:#666;
-@color-sub:#360F32;
-@color-main:#403e41;
-@color-master:#360F32;
-@color-line:@color-sub;
+@color-sub:#978382;
+@color-main:#282828;
+@color-master:#d0cccb;
+@color-under:#d1dee7;
 @layoutwith: 700px;
 
 //reset
@@ -24,10 +24,10 @@ a{
 
 //layout
 #header{
-    padding:20px 50px;
+  padding:20px 50px;
   outline:1px #F00 solid;
   text-align: center;
-  background-color: #403e41;
+  background-color: @color-main;
   h1{
     font-size:30px;
     font-weight: 300;
@@ -68,6 +68,7 @@ a{
      }
 
   .entry{
+      padding-right: 30px;
     .titleWrap{
       margin-bottom:30px;
       h2 a{
@@ -214,15 +215,23 @@ a{
        border: 1px solid #F00;
        font-size: 12px;
        .blogImage{
-            background-color: #f5f5f5;
-            font-size: 0;
-            text-align: center;
-            height: 339px;
-            span.name{
-                font-size: 15px;
-                text-align: center;
-                display: inline-block;
-            }// span.name
+           background-color: #f5f5f5;
+           border-bottom: 2px solid #ddd;
+           font-size: 0;
+           text-align: center;
+           height: 339px;
+           .blogImage{
+                span.name{
+                    font-size: 15px;
+                    text-align: center;
+                }// span.name
+           }//.blogImage
+           .social{
+               display: inline-block;
+               height: 50px;
+               width: 100%;
+               border: 1px solid #000;
+           } //.social
        } //.blogImage
        .search fieldset{
            border: 0;
@@ -241,8 +250,48 @@ a{
            width:162px;
            height: 160px;
            margin: 32px 44px 10px 44px;
+           }// .blogImage img
 
+       .category h3,
+       .recentPost h3,
+       .recentComment h3{
+          border-bottom: 1px solid @color-main;
+          margin-bottom: 15px;
+          font-size: 18px;
+          padding-bottom: 7px;
+          margin: 7px 0;
+          color: @color-main;
+          padding-left: 5px;
+       }
 
-       }// .blogImage img
+       .category,
+       .recentPost,
+       .recentComment{
+           margin-bottom: 27px;
+           border-bottom: 1px solid #ddd;
+           background-color: #f5f5f5;
+           padding: 10px 3px;
+       }
+
+      .category ul,
+      .recentPost ul,
+      .recentComment ul{
+          margin-bottom: 15px;
+          padding-left: 5px;
+      }
+
+      .category li,
+      .recentPost li,
+      .recentComment li{
+          line-height: 30px;
+          font-size: 12px;
+      }
+
    } // #sidebar
+
 } // #container
+
+#footer{
+    height: 100px;
+    background-color: @color-main;
+}// #footer
