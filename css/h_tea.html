@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrap{
+            max-width: 1100px;
+            border: 1px solid #F00;
+            margin: 0 auto;
+        }
+        .left{
+            height: 500px;
+            outline: 1px solid #F00;
+            width:23.63636363636364%;
+            float: left;
+        }
+        .content{
+            height: 500px;
+            outline: 1px solid #F00;
+            margin-left:23.63636363636364%;
+        }
+        .left-wrap{
+            height: 400px;
+            border: 1px solid #f00;
+            margin-right: 10px;
+        }
+        .grid{
+            outline: 1px solid #F00;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            width: 25%;
+            outline: 1px solid #F00;
+            float: left;
+            overflow: hidden;
+            position: relative;
+        }
+        li img{
+            width: 100%;
+            vertical-align: top;
+            transition: 1s ease;
+        }
+        li:hover img{
+            transform: scale(1.5,1.5) rotate(15deg);
+        }
+        li::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(255, 0, 0, 0.5);
+            opacity: 0;
+        }
+        li:hover::after{
+            opacity: .5;
+        }
+        /*img:hover{
+            transform: scale(1.5,1.5) rotate(15deg);
+        }*/
+        li div{
+
+            outline:1px #F00 solid;
+            margin:5px;
+        }
+        li .txt{
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 10;
+            color: #FFF;
+            font-size: 20px;
+            line-height: 20px;
+            top: 50%;
+            margin-top: -10px;
+            text-align: center;
+            width: 100%;
+
+        }
+        li .txt .tea{
+            display: inline-block;
+            border: 1px solid #F00;
+            padding: 10px 20px;
+            position: relative;
+
+        }
+        li .txt .tea .line1{
+            display: inline-block;
+            height: 4px;
+            background-color: #FFF;
+            position: absolute;
+            width: 0%;
+            left: 0;
+            top: 0;
+            transition: .5s;
+            transition-delay: .5s;
+        }
+        li:hover .tea .line1{
+            width: 100%;
+        }
+        li .txt .tea .line2{
+            display: inline-block;
+            width: 4px;
+            height: 0%;
+            background-color: #FFF;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: 1s;
+            transition-delay: 1s;
+        }
+        li:hover .tea .line2{
+            height: 100%;
+        }
+        li .txt .tea .line3{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: inline-block;
+            height: 4px;
+            width: 0%;
+            background-color: #FFF;
+            transition: 1.5s;
+            transition-delay: 1.5s;
+        }
+        li:hover .tea .line3{
+            width: 100%;
+        }
+        li .txt .tea .line4{
+            position: absolute;
+            display: inline-block;
+            left: 0;
+            bottom: 0;
+            width: 4px;
+            height: 0%;
+            background-color: #FFF;
+            transition: 2.3s;
+            transition-delay: 2.3s;
+        }
+        li:hover .tea .line4{
+            height: 100%;
+        }
+
+        li .txt_se {
+            font-size: 20px;
+            color: #FFF;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 10;
+            top: 50%;
+            width: 100%;
+            line-height: 20px;
+            text-align: center;
+            margin-top: -10px;
+        }
+        li .txt_se .fort{
+            display: inline-block;
+            border: 1px solid #f00;
+            padding: 10px 20px;
+            position: relative;
+        }
+        li .txt_se .fort .line1{
+            height: 4px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #FFF;
+            width: 0%;
+            transition: .7s;
+            transition-delay: .7s;
+        }
+        li:hover .fort .line1{
+            width: 100%;
+        }
+        li .txt_se .fort .line2{
+            width: 4px;
+            height: 0%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #FFF;
+            transition: 1s;
+            transition-delay: 1s;
+        }
+        li:hover .fort .line2{
+            height: 100%;
+        }
+        li .txt_se .fort .line3{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 0%;
+            height: 4px;
+            background-color: #FFF;
+            transition: 1.3s;
+            transition-delay:1.3s;
+        }
+        li:hover .txt_se .line3{
+            width: 100%;
+        }
+        li .txt_se .fort .line4{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 4px;
+            height: 0%;
+            background-color: #FFF;
+            transition: 1.5s;
+            transition-delay: 1.5s;
+        }
+        li:hover .fort .line4{
+            height: 100%;
+        }
+
+        @media screen and (max-width:480px){
+            .grid li{
+                float: none;
+                width: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+</body>
+</html>
+    <div class="wrap">
+        <div class="left">
+            <div class="left-wrap"></div>
+        </div>
+        <div class="content">
+            <div class="grid">
+                <ul>
+                    <li>
+                        <img src="http://www.tkgroup.co.kr/kor/_Img/Main/about-01.jpg" alt="">
+                        <span class="txt">
+                            <span class="tea">
+                                Teagaeng
+                                <span class="line1"></span>
+                                <span class="line2"></span>
+                                <span class="line3"></span>
+                                <span class="line4"></span>
+                            </span>
+                        </span>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <img src="http://www.tkgroup.co.kr/kor/_Img/Main/about-02.jpg" alt="">
+                        <span class="txt_se">
+                            <span class="fort">
+                                Fortpolio
+                                <span class="line1"></span>
+                                <span class="line2"></span>
+                                <span class="line3"></span>
+                                <span class="line4"></span>
+                            </span>
+                        </span>
+                    </li>
+
+                    <li><img src="http://www.tkgroup.co.kr/kor/_Img/Main/about-03.jpg" alt=""></li>
+                    <li><img src="http://www.tkgroup.co.kr/kor/_Img/Main/about-01.jpg" alt=""></li>
+                </ul>
+
+            </div>
+
+            </div><!-- <div class="content"> -->
+        </div>
