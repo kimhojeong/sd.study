@@ -148,13 +148,178 @@ a{text-decoration: none;color: #000;}
         }
     }
     .grid_pic{
-        margin-top: -10px;
-        ul li{
+        margin-top: -5px;
+        li{
             float: left;
-            width: 33%;
+            width: 33.33%;
             position: relative;
+            overflow: hidden;
+            .txt{
+                position: absolute;
+                top: 50%;
+                text-align: center;
+                color: #FFF;
+                font-size: 30px;
+                line-height: 20px;
+                z-index: 10;
+                width: 100%;
+                font-weight: 500;
+            }// .txt
+
+        }// li
+     li img{
+          transition: 1s;
+      }// li img
+     li:hover img{
+         transform: scale(1.2,1.2);
+     }    //  li:hover img
+     li::after{
+         content: "";
+         position: absolute;
+         top: 0;
+         left:0;
+         right: 0;
+         bottom: 0;
+         background-color: rgba(0, 255, 0, 0.3);
+         opacity: 0;
+     }//   li::after
+     li:hover::after{
+         opacity: .5;
+     }//  li:hover::after
+     li .txt .frame{
+         display: inline-block;
+         padding: 20px 30px;
+         position: relative;
+         .line1{
+             display: inline-block;
+             position: absolute;
+             left: 0;
+             top: 0;
+             background-color: #FFF;
+             height: 4px;
+             width: 0%;
+             transition: .4s;
+             transition-delay: .4s;
+         }//  .line1
+        .line2{
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 4px;
+            height: 0%;
+            background-color: #FFF;
+            transition: .7s;
+            transition-delay: .7s;
+        }// .line2
+        .line3{
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 4px;
+            width: 0%;
+            background-color: #FFF;
+            transition: 1s;
+            transition-delay: 1s;
         }
-
-
+        .line4{
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: #FFF;
+            width: 4px;
+            height: 0%;
+            transition: 1s;
+            transition-delay: 1.7s;
+        }
+     }//  li .txt .frame
+    li:hover .frame .line1,
+    li:hover .frame .line3{
+        width: 100%;
+    }
+    li:hover .frame .line2,
+    li:hover .frame .line4{
+        height: 100%;
+     }// li:hover .frame .line4
     }// .grid_pic
+    .global_section{
+        background-color: #2f3841;
+        clear: both;
+        .title{
+            height: 300px;
+            h3{
+                display: inline-block;
+                font-size: 50px;
+                text-align: center;
+                width: 100%;
+                color: #FFF;
+                font-family: 'Oswald';
+                margin-top: 70px;
+                width: 100%;
+                letter-spacing: 6px;
+            }
+        }// .title
+        .world_map{
+            img{
+                padding-top: 70px;
+                width: 100%;
+                height: 100%;
+            }
+        }// .world_map
+    }// .global_section
+
+    .tree_section{
+        li{
+            float: left;
+            width: 50%;
+            overflow: hidden;
+            position: relative;
+            .waku{
+                outline: 1px solid #F00;
+                color: #FFF;
+                font-size: 25px;
+                font-family: 'Oswald';
+                font-weight: 500;
+                position: absolute;
+                top: 50%;
+                left: 38%;
+                display: inline-block;
+                text-align: center;
+                letter-spacing: 3px;
+                span{
+                    display: block;
+                }
+            }// .waku
+            .waku_se{
+                outline: 1px solid #F00;
+                color: #FFF;
+                font-size: 25px;
+                font-family: 'Oswald';
+                font-weight: 500;
+                position: absolute;
+                top: 50%;
+                left: 27%;
+                display: inline-block;
+                text-align: center;
+                letter-spacing: 3px;
+                span{
+                    display: block;
+                }
+            }// .waku_se
+        }// li
+        li img{
+            transition: 1s;
+        }
+        li:hover img{
+            transform: scale(1.2,1.2);
+        }
+    }// .tree_section
+    .action{
+        .title{
+            display: none;
+        }// .title
+    }// .action
+
 }// .main_container
