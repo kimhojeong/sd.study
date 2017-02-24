@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;}
+        body{font-size: 12px;}
+        ul,ol{list-style: none;}
+        img{vertical-align: top;}
+        span{display:inline-block;}
+        a{text-decoration: none;color: #000;}
+        .fr{float: right;}
+        .fl{float: left;}
+
+        #wrap{outline: 1px solid #F00;width: 900px;height: 540px;margin: 30px auto;}
+        .header{outline: 1px solid #F00;width: 840px;height: 111px;margin: 0 30px;border-bottom: 2px solid #464646;}
+        .header h1{margin-top: 20px;}
+        .header .banner{margin-top: 28px;}
+        .header .top_btn{outline: 1px solid #F00;clear: left;display: inline-block;margin-top: 20px;margin-bottom: 5px;}
+
+        .section{outline: 1px solid  #F00;width: 840px;height: 380px;margin: 10px auto;}
+        .left_contents{outline: 1px solid #00F;width: 386px;height: 100%;}
+        .left_contents .first_news{outline: 1px solid #F00;height: 190px;}
+        .left_contents .first_news ul li{outline: 1px solid #000;}
+
+        .left_contents .first_news ul li a{outline: 1px  solid #F00;width: 190px;height: 190px;display: inline-block;position: relative;}
+        .left_contents .first_news ul li img{width: 100%;height: 100%;display: inline-block;}
+        .left_contents .first_news span{outline: 1px solid #00F;display: inline-block;background-color: rgba(0, 0, 255, 0.3);
+            position: absolute;left: 0; right: 0;bottom: 0;color: #FFF;font-weight: bold;}
+
+        .left_contents .second_news{outline: 1px solid #00F;width: 385px;height: 184px;margin-top: 7px;}
+        .second_news .maj{outline: 1px solid #00F;width: 271px;padding-left: 3px;margin: 0;float: left;}
+        .second_news .maj li{font-size: 12px;line-height: 28px;height: 28px;}
+        .second_news .focus{outline: 1px solid #F00;width: 106px;height: 100%;overflow: hidden;float: right;}
+        .second_news .focus .dg{border: 1px solid #000;height: 54px;padding: 5px 2px;
+            overflow: hidden;margin-bottom: 6px;text-align: center;}
+        .second_news .focus .dg a{line-height: 15px; vertical-align: sub;text-align: center;padding: 0 5px ;}
+        .second_news .focus ul li{outline: 1px solid #F00;}
+        .second_news .focus ul>li:nth-child(2)>span{outline: 1px solid #000;}
+        .second_news .focus ul>li:nth-child(2) img{width: 100%;height: 100%;}
+        .second_news .focus ul>li>span+span{background-color: #CCC;font-size: 11px;text-align: center;
+            padding: 7px 3px;line-height: 15px;letter-spacing: -1px;height: 43px;}
+
+        .right_contents{outline: 1px solid #F00;;width: 446px;height: 100%;}
+        .right_contents .r_news{outline: 1px solid #F00;height: 261px;}
+        .right_contents .r_news .mp{outline: 1px solid #F00;width: 144px;height: 79px;display:block;}
+        .right_contents .r_news .mp img{outline: 1px solid #F00;width: 100%;height: 100%;}
+        .right_contents .r_news .ct{outline: 1px solid #F00;width: 144px;height: 45px;display: block;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="header">
+            <h1><a href="" class="fl"><img src="../images/nsd114029379.gif" alt=""></a></h1>
+            <div class="banner fr"><img src="../images/468_60_01485406525004.jpg" alt=""></div>
+            <div class="top_btn">
+                 <button>구독하기</button>
+                 <button>이용자한마디</button>
+                 <button>01-21,12:21</button>
+            </div>
+        </div>
+        <div class="section">
+            <div class="left_contents fl">
+                <div class="first_news">
+                    <ul>
+                        <li>
+                            <a href=""class="new fl">
+                                <img src="../images/kbs_1.jpg" alt="">
+                                <span>특검, 3월초 수사결과 발표 방침…“마지막 날까지 수사</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""c class="new fr">
+                                <img src="../images/002.jpg" alt="">
+                                <span>특검, 3월초 수사결과 발표 방침…“마지막 날까지 수사</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="second_news">
+                    <div class="maj">
+                        <ul>
+                            <li>김정남 암살 독극물, 화학무기용 신경작용제 VX</li>
+                            <li>김정남 방문 한인식당 채취 표본으로 DNA정보 확인</li>
+                            <li>美 WP “민주주의는 암흑 속에서 죽는다</li>
+                            <li>외유 공무원 ‘낮엔 골프, 밤엔 성매매</li>
+                            <li>세계 최강 대한민국 쇼트트랙의 미스터리</li>
+                            <li>나도 우울증 아닐까?’…전 세계 3억 2천만 명</li>
+                        </ul>
+                    </div>
+                    <div class="focus">
+                        <ul>
+                            <li>
+                                <div class="dg"><a href="">강아랑의 날씨랑(2월 24일 아침)</a></div>
+                            </li>
+                            <li>
+                                <span><img src="../images/003.jpg" alt=""></span>
+                                <span>MLB닷컴 “오승환 MLB 마무리 순위, 전체 4위”</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="right_contents fr">
+                <div class="r_news">
+                    <ul>
+                        <li>
+                            <div>
+                                <a href="" class="mp"><img src="../images/004.jpg" alt=""></a>
+                                <span class="ct">‘초보운전 종결자’, 다 된 주차에 사고 뿌리기?</span>
+                            </div>
+                        </li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+                <div class="r_upper"></div>
+            </div>
+        </div>
+    </div><!-- wrap -->
+
+</body>
+</html>
