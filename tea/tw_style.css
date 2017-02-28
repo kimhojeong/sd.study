@@ -1,1 +1,284 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');body,html,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,p{margin:0;padding:0}ul,ol,li{list-style:none}img{border:0;vertical-align:top}input{vertical-align:middle}a{text-decoration:none;color:#000}.blind{font-size:0;height:0}#header{height:80px;background-color:#000;position:relative}#header .logo h1 img{outline:1px solid #F00;margin:20px 25px;float:left}#header .mainNavi_wrap{outline:1px solid #F00;font-family:'Oswald';font-size:16px;line-height:80px;font-weight:bold;width:1200px;height:80px;margin:0 auto}#header .mainNavi_wrap ul li{display:inline-block;color:#FFF;font-weight:400;margin:0 auto;width:220px;height:80px;text-align:center}#header .mainNavi_wrap ul li a{outline:1px solid #F00;color:#FFF}#header .mainNavi_wrap ul.top_menu{outline:1px solid #F00;margin:0 auto}#header .gnb_right{outline:1px solid #F00;position:absolute;right:0;bottom:20px;margin-right:25px}#header .gnb_right .home_icon{width:40px;height:35px;background-color:#222;display:inline-block}#header .gnb_right .home_icon .txt{background-image:url(../images/home-ico.png);background-repeat:no-repeat;background-position:0 3px}#header .gnb_right .menu_icon{background-image:url(../images/)}#main_contaier .video_contaier{z-index:-10;display:inline-block;position:relative;margin-top:-10px}#main_contaier .video_contaier span.v_logo{position:absolute;bottom:50%;left:37%}#main_contaier .grid_pic{margin-top:-5px}#main_contaier .grid_pic li{float:left;width:33.33%;position:relative;overflow:hidden}#main_contaier .grid_pic li .txt{position:absolute;top:50%;text-align:center;color:#FFF;font-size:30px;line-height:20px;z-index:10;width:100%;font-weight:500}#main_contaier .grid_pic li img{transition:1s}#main_contaier .grid_pic li:hover img{transform:scale(1.2, 1.2)}#main_contaier .grid_pic li::after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(0,255,0,0.3);opacity:0}#main_contaier .grid_pic li:hover::after{opacity:.5}#main_contaier .grid_pic li .txt .frame{display:inline-block;padding:20px 30px;position:relative}#main_contaier .grid_pic li .txt .frame .line1{display:inline-block;position:absolute;left:0;top:0;background-color:#FFF;height:4px;width:0;transition:.4s;transition-delay:.4s}#main_contaier .grid_pic li .txt .frame .line2{display:inline-block;position:absolute;top:0;right:0;width:4px;height:0;background-color:#FFF;transition:.7s;transition-delay:.7s}#main_contaier .grid_pic li .txt .frame .line3{display:inline-block;position:absolute;right:0;bottom:0;height:4px;width:0;background-color:#FFF;transition:1s;transition-delay:1s}#main_contaier .grid_pic li .txt .frame .line4{display:inline-block;position:absolute;left:0;bottom:0;background-color:#FFF;width:4px;height:0;transition:1s;transition-delay:1.7s}#main_contaier .grid_pic li:hover .frame .line1,#main_contaier .grid_pic li:hover .frame .line3{width:100%}#main_contaier .grid_pic li:hover .frame .line2,#main_contaier .grid_pic li:hover .frame .line4{height:100%}#main_contaier .global_section{background-color:#2f3841;clear:both}#main_contaier .global_section .title{height:300px}#main_contaier .global_section .title h3{display:inline-block;font-size:50px;text-align:center;color:#FFF;font-family:'Oswald';margin-top:70px;width:100%;letter-spacing:6px}#main_contaier .global_section .world_map img{padding-top:70px;width:100%;height:100%}#main_contaier .tree_section li{float:left;width:50%;overflow:hidden;position:relative}#main_contaier .tree_section li .waku{outline:1px solid #F00;color:#FFF;font-size:25px;font-family:'Oswald';font-weight:500;position:absolute;top:50%;left:38%;display:inline-block;text-align:center;letter-spacing:3px}#main_contaier .tree_section li .waku span{display:block}#main_contaier .tree_section li .waku_se{outline:1px solid #F00;color:#FFF;font-size:25px;font-family:'Oswald';font-weight:500;position:absolute;top:50%;left:27%;display:inline-block;text-align:center;letter-spacing:3px}#main_contaier .tree_section li .waku_se span{display:block}#main_contaier .tree_section li img{transition:1s}#main_contaier .tree_section li:hover img{transform:scale(1.2, 1.2)}#main_contaier .tree_section li::after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(0,255,0,0.3);opacity:0}#main_contaier .tree_section li:hover::after{opacity:.5}#main_contaier .action .title{display:none}
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  border: 0;
+  vertical-align: top;
+}
+input {
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.blind {
+  font-size: 0;
+  height: 0;
+}
+#header {
+  height: 80px;
+  background-color: #000;
+  position: relative;
+}
+#header .logo h1 img {
+  outline: 1px solid #F00;
+  margin: 20px 25px;
+  float: left;
+}
+#header .mainNavi_wrap {
+  outline: 1px solid #F00;
+  font-family: 'Oswald';
+  font-size: 16px;
+  line-height: 80px;
+  font-weight: bold;
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+}
+#header .mainNavi_wrap ul li {
+  display: inline-block;
+  color: #FFF;
+  font-weight: 400;
+  margin: 0 auto;
+  width: 220px;
+  height: 80px;
+  text-align: center;
+}
+#header .mainNavi_wrap ul li a {
+  outline: 1px solid #F00;
+  color: #FFF;
+}
+#header .mainNavi_wrap ul.top_menu {
+  outline: 1px solid #F00;
+  margin: 0 auto;
+}
+#header .gnb_right {
+  outline: 1px solid #F00;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  margin-right: 25px;
+}
+#header .gnb_right .home_icon {
+  width: 40px;
+  height: 35px;
+  background-color: #222;
+  display: inline-block;
+}
+#header .gnb_right .home_icon .txt {
+  background-image: url(../images/home-ico.png);
+  background-repeat: no-repeat;
+  background-position: 0 3px;
+}
+#header .gnb_right .menu_icon {
+  background-image: url(../images/);
+}
+#main_contaier .video_contaier {
+  z-index: -10;
+  display: inline-block;
+  position: relative;
+  margin-top: -10px;
+}
+#main_contaier .video_contaier span.v_logo {
+  position: absolute;
+  bottom: 50%;
+  left: 37%;
+}
+#main_contaier .grid_pic {
+  margin-top: -5px;
+}
+#main_contaier .grid_pic li {
+  float: left;
+  width: 33.33%;
+  position: relative;
+  overflow: hidden;
+}
+#main_contaier .grid_pic li .txt {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  color: #FFF;
+  font-size: 30px;
+  line-height: 20px;
+  z-index: 10;
+  width: 100%;
+  font-weight: 500;
+}
+#main_contaier .grid_pic li img {
+  transition: 1s;
+}
+#main_contaier .grid_pic li:hover img {
+  transform: scale(1.2, 1.2);
+}
+#main_contaier .grid_pic li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 255, 0, 0.3);
+  opacity: 0;
+}
+#main_contaier .grid_pic li:hover::after {
+  opacity: .5;
+}
+#main_contaier .grid_pic li .txt .frame {
+  display: inline-block;
+  padding: 20px 30px;
+  position: relative;
+}
+#main_contaier .grid_pic li .txt .frame .line1 {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #FFF;
+  height: 4px;
+  width: 0%;
+  transition: .4s;
+  transition-delay: .4s;
+}
+#main_contaier .grid_pic li .txt .frame .line2 {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 0%;
+  background-color: #FFF;
+  transition: .7s;
+  transition-delay: .7s;
+}
+#main_contaier .grid_pic li .txt .frame .line3 {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  width: 0%;
+  background-color: #FFF;
+  transition: 1s;
+  transition-delay: 1s;
+}
+#main_contaier .grid_pic li .txt .frame .line4 {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #FFF;
+  width: 4px;
+  height: 0%;
+  transition: 1s;
+  transition-delay: 1.7s;
+}
+#main_contaier .grid_pic li:hover .frame .line1,
+#main_contaier .grid_pic li:hover .frame .line3 {
+  width: 100%;
+}
+#main_contaier .grid_pic li:hover .frame .line2,
+#main_contaier .grid_pic li:hover .frame .line4 {
+  height: 100%;
+}
+#main_contaier .global_section {
+  background-color: #2f3841;
+  clear: both;
+}
+#main_contaier .global_section .title {
+  height: 300px;
+}
+#main_contaier .global_section .title h3 {
+  display: inline-block;
+  font-size: 50px;
+  text-align: center;
+  color: #FFF;
+  font-family: 'Oswald';
+  margin-top: 70px;
+  width: 100%;
+  letter-spacing: 6px;
+}
+#main_contaier .global_section .world_map img {
+  padding-top: 70px;
+  width: 100%;
+  height: 100%;
+}
+#main_contaier .tree_section li {
+  float: left;
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+#main_contaier .tree_section li .waku {
+  outline: 1px solid #F00;
+  color: #FFF;
+  font-size: 25px;
+  font-family: 'Oswald';
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 3px;
+}
+#main_contaier .tree_section li .waku span {
+  display: block;
+}
+#main_contaier .tree_section li .waku_se {
+  outline: 1px solid #F00;
+  color: #FFF;
+  font-size: 25px;
+  font-family: 'Oswald';
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 27%;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 3px;
+}
+#main_contaier .tree_section li .waku_se span {
+  display: block;
+}
+#main_contaier .tree_section li img {
+  transition: 1s;
+}
+#main_contaier .tree_section li:hover img {
+  transform: scale(1.2, 1.2);
+}
+#main_contaier .tree_section li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 255, 0, 0.3);
+  opacity: 0;
+}
+#main_contaier .tree_section li:hover::after {
+  opacity: .5;
+}
+#main_contaier .action .title {
+  display: none;
+}

@@ -1,0 +1,198 @@
+*{margin: 0;padding: 0;}
+img,video{vertical-align: top;}
+ul,ol{list-style: none;}
+a{text-decoration: none;}
+
+header{
+    border: 1px solid #F00;
+    height: 80px;
+    z-index: 100;
+}
+header>div{
+    border: 1px solid #F00;
+    background-color: #FFF;
+    overflow: hidden;
+}
+.gnb{
+    height: 80px;
+    background-color: #000;
+    padding: 0 30px;
+}
+.gnb .logo{
+    border: 1px solid #F00;
+    float: left;
+}
+.gnb .site-option{
+    border: 1px solid #F00;
+    height: 80px;
+    width: 200px;
+    float: right;
+}
+.gnb .menu{
+    border: 1px solid #F00;
+    height: 80px;
+    width: 1100px;
+    margin: 0 auto;
+}
+.gnb .menu>ul>li{
+    outline: 1px solid #F00;
+    width: 220px;
+    float: left;
+    text-align: center;
+}
+.gnb .menu>ul>li div{
+    padding: 30px 0;
+}
+.gnb .menu>ul>li> li{
+    line-height: 45px;
+}
+.gnb .menu>ul>li div{
+    display: none;
+}
+
+.gnb .menu>ul>li>a{
+    color: #FFF;
+    line-height: 80px;
+    font-family:  'Oswald', sans-serif;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.gnb .site-option{
+    font-size: 0;
+}
+.gnb .site-option a{
+    text-align: center;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+
+    height: 35px;
+    outline: 1px solid #F00;
+}
+.gnb .site-option a.home{
+    width: 40px;
+    text-indent: -9999px;
+    background-color: #666;
+    background-image: url(http://www.tkgroup.co.kr/kor/_Img/Layout/home-ico.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.gnb .site-option a.lang-en{
+    width: 45px;
+    height: 35px;
+    line-height: 35px;
+    color: #FFF;
+    background-color: #086c6d;
+}
+.gnb .site-option a.sitemap{
+    text-align: right;
+    width: 40px;
+}
+.gnb .site-option a.sitemap span{
+    line-height: 100%;
+    position: relative;
+    left: 4px;
+    top: 2px;
+    display: inline-block;
+    width: 32px;
+    height: 4px;
+    background-color: #FFF;
+}
+
+.gnb .site-option a.sitemap:hover span:first-child{
+    animation: aniline1 1s infinite;
+}
+.gnb .site-option a.sitemap:hover span:first-child+span{
+    animation: aniline2 1s infinite;
+}
+.gnb .site-option a.sitemap:hover span:first-child+span+span{
+    animation: aniline1 1.5s infinite;
+}
+@keyframes aniline1 {
+    0%{width: 22px;}
+    50%{width: 32px;}
+    100%{width: 22px;}
+}
+@keyframes aniline2 {
+    0%{width: 22px;}
+    80%{width: 32px;}
+    100%{width: 22px;}
+}
+.main_contaier .intro{
+    background-color: #CCC;
+    position: relative;
+    z-index: -1;
+}
+
+.main_contaier .intro video{
+    height: 100%;
+}
+.main_contaier .intro .titler{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -234.5px;
+}
+@media screen and (max-width:1000px) {
+header{
+    position: static;
+}
+header>div{
+    overflow: visible;
+}
+.intro{
+
+}
+
+.gnb .menu{
+    position: absolute;
+    right: 0;
+    width: 223px;
+    height: 100%;
+    background-color: #FFF;
+}
+.gnb .menu>ul>li{
+    background-color: #FFF;
+}
+.gnb .menu>ul>li>a{
+    color: #000;
+    line-height: 68px;
+}
+
+}/*@media screen and (max-width:1000px)*/
+
+.main_contaier .grid_pic ul li{
+    outline: 1px solid #F00;
+    float: left;
+    width: 33.33%;
+    }
+.global_section{
+    background-color: #2c353e;
+    clear: both;
+    height: 950px;
+    position: relative;
+}
+.global_section .title{
+    overflow: hidden;
+}
+.global_section .title h3{
+    font-size: 50px;
+    color: #FFF;
+    font-family: 'Oswald';
+    text-align: center;
+    width: 100%;
+    padding-top: 70px;
+    letter-spacing: 5px;
+    padding-bottom: 130px;
+}
+.global_section .world_map img{
+    padding-bottom: 70px;
+    height: 100%;
+
+}
+.tree_section ul li{
+    float: left;
+}
+.tree_section ul li img{
+    width: 50%;
+}

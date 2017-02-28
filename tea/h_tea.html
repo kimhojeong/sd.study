@@ -6,158 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-    <style type="text/css">
-        *{margin: 0;padding: 0;}
-        img,video{vertical-align: top;}
-        ul,ol{list-style: none;}
-        a{text-decoration: none;}
+    <script>
+        $(function(){
+            $('.menu>ul>li').hover(function(){
+                $('.menu>ul>li').children('div').stop().slideDown()
 
-        header{
-            border: 1px solid #F00;
-            height: 80px;
-            z-index: 100;
-        }
-        header>div{
-            border: 1px solid #F00;
-            background-color: #FFF;
-            overflow: hidden;
-        }
-        .gnb{
-            height: 80px;
-            background-color: #000;
-            padding: 0 30px;
-        }
-        .gnb .logo{
-            border: 1px solid #F00;
-            float: left;
-        }
-        .gnb .site-option{
-            border: 1px solid #F00;
-            height: 80px;
-            width: 200px;
-            float: right;
-        }
-        .gnb .menu{
-            border: 1px solid #F00;
-            height: 80px;
-            width: 1100px;
-            margin: 0 auto;
-        }
-        .gnb .menu>ul>li{
-            outline: 1px solid #F00;
-            width: 220px;
-            float: left;
-            text-align: center;
-        }
-        .gnb .menu>ul>li div{
-            padding: 30px 0;
-        }
-        .gnb .menu>ul>li> li{
-            line-height: 45px;
-        }
-        .gnb .menu>ul>li div{
-            display: none;
-        }
-
-        .gnb .menu>ul>li>a{
-            color: #FFF;
-            line-height: 80px;
-            font-family:  'Oswald', sans-serif;
-            text-transform: uppercase;
-            white-space: nowrap;
-        }
-        .gnb .site-option{
-            font-size: 0;
-        }
-        .gnb .site-option a{
-            text-align: center;
-            font-size: 14px;
-            display: inline-block;
-            vertical-align: top;
-
-            height: 35px;
-            outline: 1px solid #F00;
-        }
-        .gnb .site-option a.home{
-            width: 40px;
-            text-indent: -9999px;
-            background-color: #666;
-            background-image: url(http://www.tkgroup.co.kr/kor/_Img/Layout/home-ico.png);
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .gnb .site-option a.lang-en{
-            width: 45px;
-            height: 35px;
-            line-height: 35px;
-            color: #FFF;
-            background-color: #086c6d;
-        }
-        .gnb .site-option a.sitemap{
-            text-align: right;
-            width: 40px;
-        }
-        .gnb .site-option a.sitemap span{
-            line-height: 100%;
-            position: relative;
-            left: 4px;
-            top: 2px;
-            display: inline-block;
-            width: 32px;
-            height: 4px;
-            background-color: #FFF;
-        }
-
-        .gnb .site-option a.sitemap:hover span:first-child{
-            animation: aniline1 1s infinite;
-        }
-        .gnb .site-option a.sitemap:hover span:first-child+span{
-            animation: aniline2 1s infinite;
-        }
-        .gnb .site-option a.sitemap:hover span:first-child+span+span{
-            animation: aniline1 1.5s infinite;
-        }
-        @keyframes aniline1 {
-            0%{width: 22px;}
-            50%{width: 32px;}
-            100%{width: 22px;}
-        }
-        @keyframes aniline2 {
-            0%{width: 22px;}
-            80%{width: 32px;}
-            100%{width: 22px;}
-        }
-        .intro{
-            background-color: #CCC;
-            height: 300px;
-            position: relative;
-            z-index: -1;
-        }
-
-    @media screen and (max-width:1000px) {
-        header{
-            position: static;
-        }
-        header>div{
-            overflow: visible;
-        }
-        .gnb .menu{
-            position: absolute;
-            right: 0;
-            width: 223px;
-            height: 100%;
-            background-color: #FFF;
-        }
-        .gnb .menu>ul>li{
-            background-color: #FFF;
-        }
-        .gnb .menu>ul>li>a{
-            color: #000;
-            line-height: 68px;
-        }
-    }
-    </style>
+            },function(){
+                $('.menu>ul>li').children('div').stop().slideUp()
+            })
+        });
+ </script>
 </head>
 <body>
     <header>
@@ -192,53 +52,127 @@
                         <li><a href="#">management innovation</a>
                             <div>
                                 <ul>
-                                    <li><a href="">회사개요</a></li>
-                                    <li><a href="">CEO인사말</a></li>
-                                    <li><a href="">회사연혁</a></li>
-                                    <li><a href="">관계사 안내</a></li>
+                                    <li><a href="">비전</a></li>
+                                    <li><a href="">TK WAY</a></li>
+                                    <li><a href="">LEAN</a></li>
+                                    <li><a href="">TPM</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li><a href="#">portfolio</a>
                             <div>
                                 <ul>
-                                    <li><a href="">회사개요</a></li>
-                                    <li><a href="">CEO인사말</a></li>
-                                    <li><a href="">회사연혁</a></li>
-                                    <li><a href="">관계사 안내</a></li>
+                                    <li><a href="">포트폴리오</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li><a href="#">sustainability management</a>
                             <div>
                                 <ul>
-                                    <li><a href="">회사개요</a></li>
-                                    <li><a href="">CEO인사말</a></li>
-                                    <li><a href="">회사연혁</a></li>
-                                    <li><a href="">관계사 안내</a></li>
+                                    <li><a href="">SM</a></li>
+                                    <li><a href="">지속가능경영보고서</a></li>
+                                    <li><a href="">정산장학재단</a></li>
+                                    <li><a href="">장학생지원</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li><a href="#">recruit</a>
-                            <div>
-                                <ul>
-                                    <li><a href="">회사개요</a></li>
-                                    <li><a href="">CEO인사말</a></li>
-                                    <li><a href="">회사연혁</a></li>
-                                    <li><a href="">관계사 안내</a></li>
-                                </ul>
-                            </div>
                         </li>
                     </ul>
                </div>
            </div>
         </div>
     </header>
-    <div class="intro">
+    <div class="main_contaier">
+        <div class="intro">
+            <video autoplay="yes" loop width="100%">
+                <source src="../images/tkm_titi.mp4" type="video/mp4">
+            </video>
+            <div class="titler"><img src="http://www.tkgroup.co.kr/kor/_Img/Main/m-slogan.png" alt="" /></div>
+            <!-- <span class="v_logo"><img src="http://www.tkgroup.co.kr/kor/_Img/Main/m-slogan.png" alt=""></span> -->
+        </div>
+        <div class="grid_pic">
+            <ul>
+                <li>
+                    <img src="http://www.tkgroup.co.kr/kor/_Img/Main/about-01.jpg" alt="">
+                    <span class="txt">
+                        <span class="frame">
+                            <!-- VISION -->
+                            <span class="line1"></span>
+                            <span class="line2"></span>
+                            <span class="line3"></span>
+                            <span class="line4"></span>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <img src="http://www.tkgroup.co.kr/kor/_Img/Main/about-02.jpg" alt="">
+                    <span class="txt">
+                        <span class="frame">
+                            <!-- PORTFOLIO -->
+                            <span class="line1"></span>
+                            <span class="line2"></span>
+                            <span class="line3"></span>
+                            <span class="line4"></span>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <img src="http://www.tkgroup.co.kr/kor/_Img/Main/about-03.jpg" alt="">
+                    <span class="txt">
+                        <span class="frame">
+                            <!-- RECRUIT -->
+                            <span class="line1"></span>
+                            <span class="line2"></span>
+                            <span class="line3"></span>
+                            <span class="line4"></span>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </div><!--grid_pic -->
 
-    </div>
+        <div class="global_section">
+            <span class="title">
+                <h3>GLOBAL NETWORS</h3>
+            </span>
+            <div class="world_map">
+                <img src="http://www.tkgroup.co.kr/kor/_Img/Main/global-01.png" alt="">
+            </div>
+        </div><!--global_section -->
 
+        <div class="tree_section">
+            <ul>
+                <li>
+                    <span>
+                        <img src="http://www.tkgroup.co.kr/kor/_Img/Main/social-01.jpg" alt="">
+                    </span>
+                    <span class="waku">
+                        <!-- <span>SOCIAL CONTRIBUTION</span>
+                        <span>사회공헌활동</span> -->
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <img src="http://www.tkgroup.co.kr/kor/_Img/Main/social-02.jpg" alt="">
+                    </span>
+                    <span class="waku_se">
+                        <!-- <span>JENGSAN SCHARASHIOP FOUNDATION</span>
+                        <span>사회공헌활동</span> -->
+                    </span>
+                </li>
+            </ul>
+        </div><!--tree_section" -->
+        <div class="action">
+            <div>
+                <img src="http://www.tkgroup.co.kr/kor/_Img/Main/add-bg.jpg" alt="">
+            </div>
+            <div class="title">
+                <img src="" alt="">
+            </div>
+        </div>
 
-
+    </div><!--main_contaier -->
+    <div class="footer"></div>
 </body>
 </html>
