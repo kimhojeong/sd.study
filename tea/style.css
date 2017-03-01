@@ -21,12 +21,12 @@ header>div{
 .gnb .logo{
     border: 1px solid #F00;
     float: left;
+    margin-top: 20px;
 }
 .gnb .site-option{
     border: 1px solid #F00;
-    height: 80px;
-    width: 200px;
     float: right;
+    margin-top: 20px;
 }
 .gnb .menu{
     border: 1px solid #F00;
@@ -35,15 +35,32 @@ header>div{
     margin: 0 auto;
 }
 .gnb .menu>ul>li{
+    position: relative;
     outline: 1px solid #F00;
     width: 220px;
     float: left;
     text-align: center;
 }
+.gnb .menu>ul>li>a:hover{
+  color: #086c6d;
+}
+.gnb .menu>ul>li>span.ln{
+  position: absolute;
+  left: 0;
+  top: 76px;
+  display: inline-block;
+  height: 2px;
+  width: 30%;
+  background-color: #086c6d;
+}
+.gnb .menu>ul>li>a:hover .menu span.ln{
+  width: 70%;
+  background-color: #ccc;
+}
 .gnb .menu>ul>li div{
     padding: 30px 0;
 }
-.gnb .menu>ul>li> li{
+.gnb .menu>ul>li li{
     line-height: 45px;
 }
 .gnb .menu>ul>li div{
@@ -51,6 +68,7 @@ header>div{
 }
 
 .gnb .menu>ul>li>a{
+    display: block;
     color: #FFF;
     line-height: 80px;
     font-family:  'Oswald', sans-serif;
@@ -62,7 +80,7 @@ header>div{
 }
 .gnb .site-option a{
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     display: inline-block;
     vertical-align: top;
 
@@ -72,10 +90,13 @@ header>div{
 .gnb .site-option a.home{
     width: 40px;
     text-indent: -9999px;
-    background-color: #666;
+    background-color: #222;
     background-image: url(http://www.tkgroup.co.kr/kor/_Img/Layout/home-ico.png);
     background-repeat: no-repeat;
     background-position: center;
+}
+.gnb .site-option a.home:hover{
+  background-color: #666;
 }
 .gnb .site-option a.lang-en{
     width: 45px;
@@ -83,22 +104,32 @@ header>div{
     line-height: 35px;
     color: #FFF;
     background-color: #086c6d;
+    font-size: 12px;
+    font-weight: bold;
+}
+.gnb .site-option a.lang-en:hover{
+    background-color: #199394;
 }
 .gnb .site-option a.sitemap{
     text-align: right;
     width: 40px;
+    height: 35px;
+    outline: 1px solid #F00;
+    display: inline-block;
+    font-size: 8px;
 }
 .gnb .site-option a.sitemap span{
     line-height: 100%;
     position: relative;
-    left: 4px;
     top: 2px;
     display: inline-block;
-    width: 32px;
-    height: 4px;
+    width: 29px;
+    height: 2px;
     background-color: #FFF;
 }
-
+.gnb .site-option a.sitemap span:nth-child(2){
+  width: 24px;
+}
 .gnb .site-option a.sitemap:hover span:first-child{
     animation: aniline1 1s infinite;
 }
@@ -140,9 +171,6 @@ header{
 header>div{
     overflow: visible;
 }
-.intro{
-
-}
 
 .gnb .menu{
     position: absolute;
@@ -150,9 +178,11 @@ header>div{
     width: 223px;
     height: 100%;
     background-color: #FFF;
+    z-index: 30;
 }
 .gnb .menu>ul>li{
     background-color: #FFF;
+    float: left;
 }
 .gnb .menu>ul>li>a{
     color: #000;
@@ -162,37 +192,164 @@ header>div{
 }/*@media screen and (max-width:1000px)*/
 
 .main_contaier .grid_pic ul li{
-    outline: 1px solid #F00;
     float: left;
+    overflow: hidden;
     width: 33.33%;
-    }
-.global_section{
-    background-color: #2c353e;
-    clear: both;
-    height: 950px;
     position: relative;
 }
-.global_section .title{
-    overflow: hidden;
+.main_contaier .grid_pic .txt{
+  position: absolute;
+  left: 37%;
+  top: 43%;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: bold;
+  font-family:'Oswald';
+  letter-spacing: 2px;
+  padding: 9px 20px;
+}
+.main_contaier .grid_pic .txt .frame span.line1{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #FFF;
+  transition: .4s;
+  transition-delay: .4s;
+}
+.main_contaier .grid_pic ul li:hover .frame .line1{
+  width: 100%;
+}
+.main_contaier .grid_pic .txt .frame span.line2{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #FFF;
+  width: 3px;
+  height: 0%;
+  transition: .8s;
+  transition-delay: .8s;
+}
+.main_contaier .grid_pic ul li:hover .frame .line2{
+  height: 100%;
+}
+.main_contaier .grid_pic .txt .frame span.line3{
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background-color: #FFF;
+  transition: 1.2s;
+  transition-delay: 1.2s;
+}
+.main_contaier .grid_pic ul li:hover .frame .line3{
+  width: 100%;
+}
+.main_contaier .grid_pic .txt .frame span.line4{
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  height: 0%;
+  background-color: #FFF;
+  transition: 1s;
+  transition-delay: 2.1s;
+}
+.main_contaier .grid_pic ul li:hover .frame .line4{
+  height: 100%;
+}
+.main_contaier .grid_pic ul li::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 255, 0, 0.3);
+  opacity: 0;
+}
+.main_contaier .grid_pic ul li:hover::after{
+  opacity: .5;
+}
+.main_contaier .grid_pic ul li img{
+    width: 100%;
+    transition: 1s;
+}
+.main_contaier .grid_pic ul li:hover img{
+  transform: scale(1.2,1.2);
+}
+.global_section{
+    background-color: #2c353e;
+    height: 950px;
+    clear: both;
+    position: relative;
 }
 .global_section .title h3{
+    position: absolute;
+    top: 98px;
+    left: 36%;
     font-size: 50px;
     color: #FFF;
     font-family: 'Oswald';
-    text-align: center;
-    width: 100%;
-    padding-top: 70px;
     letter-spacing: 5px;
     padding-bottom: 130px;
 }
 .global_section .world_map img{
+    position: absolute;
+    left: 6%;
+    top: 30%;
     padding-bottom: 70px;
-    height: 100%;
 
 }
 .tree_section ul li{
     float: left;
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.tree_section ul li::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 255, 0, 0.3);
+  opacity: 0;
+}
+.tree_section ul li:hover::after{
+  opacity: .5;
 }
 .tree_section ul li img{
-    width: 50%;
+    width: 100%;
+    transition: 1s;
+}
+.tree_section ul li:hover img{
+  transform: scale(1.2,1.2);
+}
+.tree_section .waku{
+  position: absolute;
+  left: 36%;
+  top: 43%;
+  color: #FFF;
+}
+.tree_section .waku span,
+.tree_section .waku_se span{
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  font-family:'Oswald';
+  letter-spacing: 2px;
+}
+.tree_section .waku_se{
+  position: absolute;
+  left: 27%;
+  top: 43%;
+  color: #FFF;
 }

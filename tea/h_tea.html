@@ -7,17 +7,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="wow.min.js"></script>
     <title>Document</title>
     <script>
         $(function(){
             $('.menu>ul>li').hover(function(){
                 $('.menu>ul>li').children('div').stop().slideDown()
-
             },function(){
                 $('.menu>ul>li').children('div').stop().slideUp()
             })
         });
  </script>
+
 </head>
 <body>
     <header>
@@ -40,6 +41,7 @@
                <div class="menu">
                    <ul>
                         <li><a href="#">company</a>
+                            <span class="ln"></span>
                             <div>
                                 <ul>
                                     <li><a href="">회사개요</a></li>
@@ -77,10 +79,16 @@
                             </div>
                         </li>
                         <li><a href="#">recruit</a>
+                          <div>
+                            <ul>
+                              <li></li>
+                            </ul>
+                          </div>
                         </li>
                     </ul>
-               </div>
-           </div>
+               </div><!-- <div class="menu"> -->
+
+           </div><!-- <div class="gnb">   -->
         </div>
     </header>
     <div class="main_contaier">
@@ -97,7 +105,7 @@
                     <img src="http://www.tkgroup.co.kr/kor/_Img/Main/about-01.jpg" alt="">
                     <span class="txt">
                         <span class="frame">
-                            <!-- VISION -->
+                            VISION
                             <span class="line1"></span>
                             <span class="line2"></span>
                             <span class="line3"></span>
@@ -109,7 +117,7 @@
                     <img src="http://www.tkgroup.co.kr/kor/_Img/Main/about-02.jpg" alt="">
                     <span class="txt">
                         <span class="frame">
-                            <!-- PORTFOLIO -->
+                            PORTFOLIO
                             <span class="line1"></span>
                             <span class="line2"></span>
                             <span class="line3"></span>
@@ -121,7 +129,7 @@
                     <img src="http://www.tkgroup.co.kr/kor/_Img/Main/about-03.jpg" alt="">
                     <span class="txt">
                         <span class="frame">
-                            <!-- RECRUIT -->
+                            RECRUIT
                             <span class="line1"></span>
                             <span class="line2"></span>
                             <span class="line3"></span>
@@ -148,8 +156,8 @@
                         <img src="http://www.tkgroup.co.kr/kor/_Img/Main/social-01.jpg" alt="">
                     </span>
                     <span class="waku">
-                        <!-- <span>SOCIAL CONTRIBUTION</span>
-                        <span>사회공헌활동</span> -->
+                        <span>SOCIAL CONTRIBUTION</span>
+                        <span>사회공헌활동</span>
                     </span>
                 </li>
                 <li>
@@ -157,8 +165,8 @@
                         <img src="http://www.tkgroup.co.kr/kor/_Img/Main/social-02.jpg" alt="">
                     </span>
                     <span class="waku_se">
-                        <!-- <span>JENGSAN SCHARASHIOP FOUNDATION</span>
-                        <span>사회공헌활동</span> -->
+                        <span>JENGSAN SCHARASHIOP FOUNDATION</span>
+                        <span>정산장학재단</span>
                     </span>
                 </li>
             </ul>
@@ -168,7 +176,7 @@
                 <img src="http://www.tkgroup.co.kr/kor/_Img/Main/add-bg.jpg" alt="">
             </div>
             <div class="title">
-                <img src="" alt="">
+                <img src="../images/add-txt.png" alt="">
             </div>
         </div>
 
