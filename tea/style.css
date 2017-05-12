@@ -4,12 +4,10 @@ ul,ol{list-style: none;}
 a{text-decoration: none;}
 
 header{
-    border: 1px solid #F00;
     height: 80px;
     z-index: 100;
 }
 header>div{
-    border: 1px solid #F00;
     background-color: #FFF;
     overflow: hidden;
 }
@@ -19,24 +17,20 @@ header>div{
     padding: 0 30px;
 }
 .gnb .logo{
-    border: 1px solid #F00;
     float: left;
     margin-top: 20px;
 }
 .gnb .site-option{
-    border: 1px solid #F00;
     float: right;
     margin-top: 20px;
 }
 .gnb .menu{
-    border: 1px solid #F00;
     height: 80px;
     width: 1100px;
     margin: 0 auto;
 }
 .gnb .menu>ul>li{
     position: relative;
-    outline: 1px solid #F00;
     width: 220px;
     float: left;
     text-align: center;
@@ -44,18 +38,15 @@ header>div{
 .gnb .menu>ul>li>a:hover{
   color: #086c6d;
 }
-.gnb .menu>ul>li>span.ln{
+.gnb .menu span.bar{
   position: absolute;
-  left: 0;
-  top: 76px;
+  left: 402px;
+  top: 79px;
   display: inline-block;
   height: 2px;
-  width: 30%;
+  width: 220px;
   background-color: #086c6d;
-}
-.gnb .menu>ul>li>a:hover .menu span.ln{
-  width: 70%;
-  background-color: #ccc;
+  display: none;
 }
 .gnb .menu>ul>li div{
     padding: 30px 0;
@@ -85,7 +76,6 @@ header>div{
     vertical-align: top;
 
     height: 35px;
-    outline: 1px solid #F00;
 }
 .gnb .site-option a.home{
     width: 40px;
@@ -114,14 +104,12 @@ header>div{
     text-align: right;
     width: 40px;
     height: 35px;
-    outline: 1px solid #F00;
     display: inline-block;
     font-size: 8px;
 }
 .gnb .site-option a.sitemap span{
     line-height: 100%;
     position: relative;
-    top: 2px;
     display: inline-block;
     width: 29px;
     height: 2px;
@@ -188,7 +176,18 @@ header>div{
     color: #000;
     line-height: 68px;
 }
-
+.main_contaier .intro .titler img{
+    width: 60%;
+}
+.main_contaier .grid_pic .txt{
+    width: 50%;
+    height: 50%;
+}
+.action .title>img{
+    width: 60%;
+    position: relative;
+    left: 40%;
+}
 }/*@media screen and (max-width:1000px)*/
 
 .main_contaier .grid_pic ul li{
@@ -290,10 +289,120 @@ header>div{
     clear: both;
     position: relative;
 }
+.global_section .world_map .txt_01{
+    position: absolute;
+    left: 47%;
+    top: 50%;
+}
+.global_section .world_map .txt_02{
+    position: absolute;
+    left: 67%;
+    top: 53%;
+    color: #ec7a00;
+}
+.global_section .world_map .txt_03{
+    position: absolute;
+    left: 35%;
+    top: 43%;
+}
+.global_section .world_map .txt_04{
+    position: absolute;
+    left: 48%;
+    top: 59%;
+}
+.global_section .world_map .txt_05{
+    position: absolute;
+    left: 30%;
+    top: 70%;
+}
+.global_section .world_map span{
+    display: inline-block;
+    background:rgba(255,255,255,0.4);
+}
+.global_section .world_map .line_ko .line-1{
+    position: absolute;
+    width: 1px;
+    height: 29px;
+    left: 842px;
+    top: 475px;
+}
+.global_section .world_map .line_ko .line-2{
+    position: absolute;
+    width: 43px;
+    height: 1px;
+    left: 842px;
+    top: 503px;
+}
+.global_section .world_map .line_us .line-1{
+    position: absolute;
+    left: 1105px;
+    top: 449px;
+    width: 1px;
+    height: 75px;
+    background: rgba(236,122,0,0.4);
+
+}
+.global_section .world_map .line_us .line-2{
+    position: absolute;
+    left: 1105px;
+    top: 523px;
+    width: 165px;
+    height: 1px;
+    background: rgba(236,122,0,0.4);
+}
+.global_section .world_map .line_ch .line-1{
+    position: absolute;
+    left:754px;
+    top: 45%;
+    width: 1px;
+    height: 29px;
+}
+.global_section .world_map .line_ch .line-2{
+    position: absolute;
+    left: 755px;
+    top: 456px;
+    width: 38px;
+    height: 1px;
+}
+.global_section .world_map .line_vi .line-1{
+    position: absolute;
+    left: 802px;
+    top: 569px;
+    width: 98px;
+    height: 1px;
+}
+.global_section .world_map .line_vi .line-2{
+    position: absolute;
+    left: 876px;
+    top: 570px;
+    width: 1px;
+    height: 18px;
+}
+.global_section .world_map .line_vi .line-3{
+    position: absolute;
+    left: 876px;
+    top: 588px;
+    width: 25px;
+    height: 1px;
+}
+.global_section .world_map .line_indo .line-1{
+    position: absolute;
+    left: 715px;
+    top: 671px;
+    width: 77px;
+    height: 1px;
+}
+.global_section .world_map .line_indo .line-2{
+    position: absolute;
+    left: 791px;
+    top: 653px;
+    width: 1px;
+    height: 18px;
+}
 .global_section .title h3{
     position: absolute;
     top: 98px;
-    left: 36%;
+    left: 38%;
     font-size: 50px;
     color: #FFF;
     font-family: 'Oswald';
@@ -302,10 +411,26 @@ header>div{
 }
 .global_section .world_map img{
     position: absolute;
-    left: 6%;
+    left: 12%;
     top: 30%;
     padding-bottom: 70px;
 
+}
+.global_section .world_map strong{
+    display: inline-block;
+    padding-bottom: 4px;
+}
+.global_section .world_map p{
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 12px;
+    color: #FFF;
+    display: inline-block;
+}
+.global_section .world_map p strong{
+    font-size: 13px;
+    font-weight: 300;
+    display: block;
 }
 .tree_section ul li{
     float: left;
@@ -352,4 +477,378 @@ header>div{
   left: 27%;
   top: 43%;
   color: #FFF;
+}
+.action{
+  clear: both;
+  position: relative;
+}
+.action>div>img{
+  width: 100%;
+}
+.action .title{
+  position: absolute;
+  right: 70px;
+  top: 100px;
+}
+.footer{
+  clear: both;
+  margin-top: -2px;
+  text-align: center;
+}
+.footer .site{
+    height: 70px;
+    background-color: #222;
+}
+
+.footer .site ul li span{
+  color: #FFF;
+  font-size: 15px;
+  padding-left: 15px;
+}
+.footer .site a:hover{
+  text-decoration: underline;
+  color: #FFF;
+}
+.footer .site ul{
+  text-align: center;
+}
+.footer .site ul li{
+  display: inline-block;
+  width: 600px;
+  height: 70px;
+  line-height: 70px;
+}
+.footer .site ul li:nth-child(1) a{
+    padding-left: 26px;
+    background-image: url(http://www.tkgroup.co.kr/_Template/Footer/tkgroup-kr/_Img/ftoplink_ico01.png);
+    background-repeat: no-repeat;
+}
+.footer .site ul li:nth-child(2) a{
+    padding-left: 26px;
+    background-image: url(http://www.tkgroup.co.kr/_Template/Footer/tkgroup-kr/_Img/ftoplink_ico02.png);
+    background-repeat: no-repeat;
+    background-position: 0 -3px;
+}
+.footer .site ul li i{
+  margin-left: 10px;
+  width: 20px;
+  height: 13px;
+  line-height: 70px;
+  padding: 0;
+  display: inline-block;
+  background-image: url(../images/ftoplink_arr.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer .add img{
+    position: absolute;
+    left: 48%;
+    top: 27%;
+    width: 67px;
+    height: 47px;
+    display: block;
+}
+.footer .add span{
+    color: #FFF;
+    font-size: 15px;
+    line-height: 1.4;
+    letter-spacing: 2px;
+}
+.footer .add{
+    height: 286px;
+    background-color: #000;
+    position: relative;
+    text-align: center;
+    position: relative;
+}
+.footer .dress{
+    position: absolute;
+    bottom: 95px;
+    left: 28%;
+}
+.footer .add span:last-child{
+    display: block;
+    font-size: 13px;
+    color:#53504e;
+    position: absolute;
+    bottom: -24px;
+    left: 17%;
+}/*mainpage_end*/
+
+/*sub1_start*/
+.sub1_container .sub_top .business{
+  z-index: -1;
+  position: relative;
+}
+.sub1_container .sub_top{
+  position: relative;
+}
+.sub1_container .sub_top img{
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+.sub1_container .left_menu{
+  border-top: 1px solid #CCC;
+  height: 55px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 15px;
+}
+.sub1_container .left_menu .depth{
+  display: inline-block;
+  width: 488px;
+  height: 55px;
+}
+.sub1_container .left_menu ul li{
+  float: left;
+  display: inline-block;
+  width: 122px;
+  height: 55px;
+  line-height: 55px;
+}
+.sub1_container .left_menu li a{
+  color: #FFF;
+  display: block;
+}
+.sub1_container .left_menu li:first-child{
+  background-color: #329a98;
+}
+.sub1_container .left_menu li:first-child a:hover{
+  text-decoration: none;
+}
+.sub1_container .left_menu li a:hover{
+  text-decoration: underline;
+}
+.sub1_container .cont{
+  height: 185px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.sub1_container .cont .vision{
+  display: inline-block;;
+  height: 186px;
+  width: 1200px;
+}
+.sub1_container .cont .vision h2{
+  display: block;
+  font-size: 30px;
+  padding: 72px 0;
+}
+.sub1_container .cont .vision a.arr_l{
+  width: 62px;
+  height: 62px;
+  background-image: url(../images/cont-prev.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 58px;
+  left: 168px;
+}
+.sub1_container .cont .vision a.arr_l::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-image: url(../images/cont-prev-o.png);
+  background-repeat: no-repeat;
+  width: 62px;
+  height: 62px;
+  display: none;
+}
+.sub1_container .cont .vision a:hover::before{
+  display: block;
+}
+.sub1_container .cont .vision a.arr_r{
+  width: 62px;
+  height: 62px;
+  background-image: url(../images/cont-next.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 58px;
+  right: 168px;
+}
+.sub1_container .cont .vision a.arr_r::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-image: url(../images/cont-next-o.png);
+  background-repeat: no-repeat;
+  width: 62px;
+  height: 62px;
+  display: none;
+}
+.sub1_container .cont .vision a.arr_r:hover::before{
+  display: block;
+}
+.sub1_container .leader{
+  position: relative;
+  text-align: center;
+  color: #FFF;
+  font-family: 'Oswald';
+}
+.sub1_container .leader img{
+  width: 100%;
+  height: 100%;
+}
+.sub1_container .leader h3{
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  font-size: 27px;
+  letter-spacing: 1px;
+}
+.sub1_container .leader div{
+  position: absolute;
+  left: 0;
+  top: 45%;
+  font-size: 42px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 100%;
+}
+.sub1_container .grap_title{
+  position: relative;
+  width: 100%;
+  height: 1300px;
+}
+.sub1_container .grap_title>div{
+  width: 100%;
+  height: 100%;
+}
+.sub1_container .grap_title>div::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url(../images/vision-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: -281px -631px;
+  z-index: -1;
+}
+.sub1_container .grap_title .tit{
+  text-align: center;
+  padding-top: 77px;
+}
+.sub1_container .grap_title .tit h3{
+  font-size: 25px;
+  font-weight: normal;
+}
+.sub1_container .grap_title .tit>span{
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.sub1_container .flow_one{
+  clear: both;
+  text-align: center;
+  transition: 1s;
+}
+.sub1_container .flow_one img{
+  padding-top: 80px;
+}
+.sub1_container .flow_one h4{
+  position: absolute;
+  left: 254px;
+  top: 277px;
+  width: 123px;
+  height: 48px;
+  padding: 22px 0 0 45px;
+  font-size: 20px;
+  text-align: left;
+  display: inline-block;
+  color: #FFF;
+  background-image: url(../images/vision_bul.png);
+  background-repeat: no-repeat;
+  padding-right: 48px;
+}
+.sub1_container .flow_two{
+  clear: both;
+  text-align: center;
+  transition: 1s;
+}
+.sub1_container .flow_two img{
+  padding-top: 80px;
+}
+.sub1_container .flow_two h4{
+  position: absolute;
+  left: 254px;
+  top: 734px;
+  width: 123px;
+  height: 48px;
+  padding: 22px 0 0 45px;
+  font-size: 20px;
+  text-align: left;
+  display: inline-block;
+  color: #FFF;
+  background-image: url(../images/vision_bul.png);
+  background-repeat: no-repeat;
+  padding-right: 48px;
+}
+.sub1_container .arr{
+  text-align: center;
+}
+/*sub1_page_end*/
+/*slide_page_start*/
+html,body{height: 100%;}
+.slide{
+    width: 100%;
+    height: 900px;
+    position: relative;
+    text-align: center;
+    background-color: #262e35;
+    z-index: -1;
+    color: #FFF;
+}
+.slide li{
+    display: inline-block;
+}
+.slide li.on>div{
+    display: block;
+}
+.slide div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.slide ul>li.on>div>cite{
+  font-size: 33px;
+}
+.slide li img{
+    position: relative;
+    top: 192px;
+}
+.slide li cite{
+    position: relative;
+    top: 169px;
+    font-style: normal;
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+}
+.slide li a{
+    position: relative;
+    z-index: 10;
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 655px;
+    color: #FFF;
+}
+.slide li cite,
+.slide li span{
+    display: block;
 }

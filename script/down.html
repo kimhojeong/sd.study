@@ -1,0 +1,56 @@
+<script>
+// var number = Math.floor(Math.random() * 100);
+// var coin = 5;
+// updown();
+//
+// function updown(){
+//
+//     for(var i = 0; i < coin; i++){
+//
+//     var put = prompt('숫자를 입력해주세요');
+//     if(number == put){
+//         console.log('정답!');
+//         break;
+//     }else if(number < put){
+//         console.log('Down!');
+//     }else if(number > put){
+//         console.log('Up!');
+//     }else{
+//         console.log('올바른값을 입력하세요');
+//     }
+//
+//
+// }
+// }
+
+
+var number = Math.floor(Math.random() * 100);
+var coin = 5;
+updown();
+
+function updown(){
+
+    for(var i = 0; i < coin; i++){
+
+    var put = prompt('숫자를 입력해주세요');
+    if(number == put){
+        console.log('정답!');
+        break;
+    }else if(number < put){
+        console.log('Down!');
+    }else if(number > put){
+        console.log('Up!');
+    }else{
+        console.log('올바른값을 입력하세요');
+    }
+    gameover();
+}
+}
+
+function gameover(){
+if(i == coin-1){
+   console.log("게임오버");
+}
+}
+
+</script>

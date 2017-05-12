@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <style type="text/css">
+        .blind{ position:absolute; left:0; top:0; right:0; bottom:0; background-color:rgb(255,0,0); display:none;}
+        .popwrap{position:absolute; width:400px; height:400px; border:1px #F00 solid; left:50%; top:50%; margin-left:-200px; margin-top:-200px; background: #FFF; z-index:1; display:none; }
+
+
+    </style>
+</head>
+<body>
+    <button class="popup" onclick="popOpen('오류다')">팝업</button>
+    <button class="popup" onclick="popOpen('아이디입력')">팝업</button>
+    <button class="popup" onclick="popOpen('비밀번호이상해')">팝업</button>
+    <button class="popup" onclick="popOpen('로그인됨')">팝업</button>
+
+    <div class="popwrap">
+        <button class="close">닫기</button>
+        <span class="message"></span>
+    </div>
+    <script>
+
+           var popuplist = $('.popwrap').clone()
+
+             $('.popwrap').remove();
+
+            function blind(){
+                $('body').append("<div class='blind'></div>");
+                $('.blind').fadeTo(500,.5);
+            }
+
+            var wrapcss = function(msg){
+
+                blind();
+                $('body').append(popuplist);
+                $('.message').text(msg);
+
+                if(msg=='오류다'){
+                    $('.popwrap').css({'border-radius':'20%'}).fadeIn();
+                }else if (msg=="아이디입력") {
+                    $('.popwrap').css({'border-radius':'30%'}).fadeIn();
+                }else if (msg=="비밀번호이상해") {
+                    $('.popwrap').css({'border-radius':'40%'}).fadeIn();
+                }else if (msg=="로그인됨") {
+                    $('.popwrap').css({'border-radius':'50%'}).fadeIn();
+                }
+            }
+
+           function popOpen(msg){
+               wrapcss(msg);
+           }
+
+            $('body').on('click','.close',function(){
+             $('.blind').fadeOut(function(){
+                 $(this).remove();
+             });
+             $('.popwrap').fadeOut();
+             })
+
+    </script>
+
+</body>
+</html>

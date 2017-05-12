@@ -1,0 +1,53 @@
+*{margin: 0;padding: 0;}
+html,body{height: 100%;}
+ul{list-style: none;}
+.slide{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #F00;
+    position: relative;
+    text-align: center;
+}
+.slide li{
+    display: inline-block;
+}
+.slide li.on>div{
+    display: block;
+}
+.slide div{
+    position: absolute;
+    border: 1px solid #F00;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slide li img{
+    position: relative;
+    top: 100px;
+}
+.slide li cite{
+    font-size: 20px;
+    position: relative;
+    top: 100px;
+}
+.slide div cite{
+    font-size: 20px;
+    position: relative;
+    top: 100px;
+}
+.slide li a{
+    position: relative;
+    z-index: 10;
+    display: block;
+    border: 1px solid #F00;
+    width: 20px;
+    height: 20px;
+    top: 600px;
+}
+.slide li cite,
+.slide li span{
+    display: block;
+}

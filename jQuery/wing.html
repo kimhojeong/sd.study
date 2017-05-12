@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+
+
+            $(window).resize(function(){
+
+                var offleft = $('.wrap').offset().left;
+                var wrapwidth = $('.wrap').width();
+
+                $('.fly').css('left',offleft+wrapwidth+10);
+            });
+            $(window).trigger('resize')
+
+
+            $(window).scroll(function(){
+                var sct = $(window).scrollTop();
+
+                if( sct < 1000){
+                    $('.fly').css('margin-bottom',0)
+                    .stop().animate({
+                        'top':sct
+                    });
+                    console.log(sct);
+                }else if (sct >= 1000){
+                    $('.fly').css('margin-bottom',100)
+                    .stop().animate({
+                        'top':sct
+                    });
+                    console.log(sct);
+                };
+
+            });
+
+        });
+    </script>
+
+    <style>
+        .wrap{width:800px; height:3000px; border:1px #F00 solid; margin:0 auto;}
+        .fly{width:80px; height:200px; border:1px #F00 solid; position:absolute; left:0; top:0;}
+    </style>
+</head>
+<body>
+    <div class="wrap"></div>
+    <div class="fly"></div>
+</body>
+</html>

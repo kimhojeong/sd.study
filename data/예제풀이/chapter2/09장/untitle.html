@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+
+
+    $(document).ready(function(){
+
+        var starttt = function(){
+            $('body').append('<button class="tt">버튼생성</button>')
+         }
+
+
+        $('.start').click(starttt)
+
+        $('body').on('click','.tt',function(){
+          console.log('sdfsdfsdf')
+        })
+
+        $('.off').click(function(){
+            $('.start').off('click');
+        })
+
+         $('.start').click(starttt)
+
+    })
+    </script>
+</body>
+</html>

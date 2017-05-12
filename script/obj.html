@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script>
+    var cardGame = {
+            shape:["♡","◇","♠","♣"],
+            ea:13,
+            startdeal:3,
+            organize :function(){
+
+                this.deck=[];
+                this.user=[];
+
+                for(var i = 0 in this.shape){
+
+                    for(var j = 0; j<this.ea; j++){
+
+
+                        switch(j){
+
+                            case 0:
+                            this.deck.push(this.shape[i]+"A");
+                            break;
+
+                            case 10:
+                            this.deck.push(this.shape[i]+"J");
+                            break;
+
+                            case 11:
+                            this.deck.push(this.shape[i]+"Q");
+                            break;
+
+                            case 12:
+                            this.deck.push(this.shape[i]+"K");
+                            break;
+
+                            default:
+                            this.deck.push(this.shape[i]+(j+1));
+                            break;
+                        }
+                    }
+                }
+                console.log("카드 정리 완료!");
+            },
+            call:function(){
+               this.user.push(this.deck[this.random(this.deck.length)])
+               console.log(this.user)
+            },
+            random:function(x){
+                var r = Math.floor(Math.random() * x);
+                console.log(r);
+               return r;
+            },
+        }
+
+
+    var seven = {
+        end:7,
+        start:function(){
+            cardGame.organize();
+            for(var i = 0; i <cardGame.startdeal; i++){
+                cardGame.call();
+            }
+        },
+        call:function(){
+            if(cardGame.user.length == 7){
+              console.log("GameOver");
+            }else{
+              cardGame.call();
+            }
+        }
+    }
+
+</script>
+
+</head>
+<body>
+
+    <button onclick="seven.start();">시작</button>
+    <button onclick="seven.call();">  콜</button>
+
+</body>
+</html>

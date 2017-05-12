@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+
+    <script>
+    var shape = ["♡","◇","♠","♣"];
+    var deck = [];
+    var user = [];
+
+    function start(){
+        for(var i=0 in shape){
+            j = 0;
+            while(j < 13){
+
+                switch(j){
+                    case 0:
+                    deck.push(shape[i]+"A");
+                    break;
+
+                    case 10:
+                    deck.push(shape[i]+"J");
+                    break;
+
+                    case 11:
+                    deck.push(shape[i]+"Q");
+                    break;
+
+                    case 12:
+                    deck.push(shape[i]+"K");
+                    break;
+
+                    default:
+                    deck.push(shape[i]+(j+1));
+                    break;
+                }
+
+                j++;
+            }
+        }
+
+        for(var i = 0; i< 3; i++){
+            call()
+        }
+
+
+
+    }
+
+    function call(){
+
+        if(user.length == 7 ){
+            alert("게임오버");
+        }else{
+            var r = Math.floor(Math.random() * deck.length)
+            user.push(deck[r]); //사용자에게 1장 주기
+            deck.splice(r,1); //카드 삭제 난수에 해당하는 번째로부터 1개
+            console.log(deck);
+            console.log(user);
+        }
+
+
+
+
+    }
+
+
+</script>
+
+
+
+
+
+</head>
+<body>
+    <button onclick="start()">시작</button>
+    <button onclick="call()">콜</button>
+</body>
+</html>

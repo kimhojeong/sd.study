@@ -1,0 +1,35 @@
+<script>
+    //void 보이드함수 : 반환값 없음
+    // return 리터럴 함수
+    // 익명함수
+    // txt();
+    // var txt = function(){
+    //     console.log('hello world');
+    // }
+
+
+    //  txt();
+    //  var txt = fuction(){
+    //     console.log('hello world');
+    // }
+
+    // 콜백
+
+    function sum(x,y){
+        return x+y
+    }
+    var n = function(){
+        return 10;
+    }
+    console.log(sum(1,n()));
+
+    //클로저
+    function closer(x){
+            var z = x+10;
+        return fuction(y){
+            return z + y;
+        }
+    }
+    console.log(closer(10)(10));
+
+</script>

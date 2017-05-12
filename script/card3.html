@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript">
+
+    var shape =["♡","◇","♠","♣"];
+    var deck =[];
+    var user =[];
+
+    // var i = 0 in shape
+    // 카드섞기
+    function decks(){
+      deck =[]
+      for(var i = 0; i < 4; i++){
+        for(var j = 0; j < 13; j++){
+          if( j == 0){
+            deck.push(shape[i]+("A"));
+          }else if( j == 10){
+            deck.push(shape[i]+("J"));
+          }else if( j == 11){
+            deck.push(shape[i]+("Q"));
+          }else if( j == 12){
+            deck.push(shape[i]+("K"));
+          }else{
+            deck.push(shape[i]+("j+1"));
+          }
+        }
+      }
+      console.log(deck);
+    }
+
+    // 카드3장주기
+    function output3(){
+      if(user.length<3){
+        for(var k = 0; k<3; k++){
+          var random = Math.floor(Math.random()*deck.length);
+          user.push(deck[random]);
+          deck.splice(random,1);
+          console.log(user);
+        }
+        console.log(deck);
+      }else{
+        console.log('1장씩 뽑아주세요');
+      }
+    }
+
+    // 카드1장주기
+    function output1(){
+      if(user.length<7){
+        var random = Math.floor(Math.random() * deck.length);
+        console.log(random);
+        user.push(deck[random]);
+        deck.splice(random,1);
+        console.log(deck);
+        console.log(user);
+      }else{
+        console.log('end');
+      }
+    }
+  </script>
+</head>
+<body>
+  <button onclick="decks()">섞기</button>
+  <button onclick="output3()">카드3장씩주기</button>
+  <button onclick="output1()">카드1장씩주기</button>
+</body>
+</html>

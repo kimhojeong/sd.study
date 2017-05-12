@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+    var shape = ["♡","◇","♠","♣"];
+    var deck = [];
+    var user = [];
+    
+    function decks(){
+        deck = []
+        for(var i = 0 in shape){
+            for(var j=0; j < 13; j++){
+                
+                if(j == 0){
+                    deck.push(shape[i]+("A"));
+                }else if(j == 10){
+                    deck.push(shape[i]+("J"));
+                }else if(j == 11){
+                    deck.push(shape[i]+("Q"));
+                }else if(j == 12){
+                    deck.push(shape[i]+("K"));
+                }else{
+                    deck.push(shape[i]+(j+1));   
+                }
+             }
+        }
+        console.log(deck)
+    }
+    
+    function output(){
+        var random = Math.floor(Math.random() * deck.length);
+        user.push(deck[random]);
+        deck.splice(random,1);
+        console.log(deck);
+        console.log(user);
+    }
+</script>
+</head>
+<body>
+    <button onclick="decks()">섞기</button>
+    <button onclick="output()">카드주기</button>
+</body>
+</html>
